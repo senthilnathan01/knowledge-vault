@@ -31,10 +31,14 @@
             "id": "8e59d8b60cd4b069",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Welcome"
             }
           }
         ]
@@ -199,8 +203,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "60ddcc6aba4d82b6",
+  "active": "8e59d8b60cd4b069",
   "lastOpenFiles": [
+    "Welcome.md",
+    "projects/Projects.md",
+    "concepts/Concepts.md",
+    "sources/youtube/YouTube Sources.md",
+    "inbox/Inbox.md",
+    "my_prompts.md",
     "vault_manifest.json",
     "VAULT_INDEX.md",
     "README.md",
@@ -210,7 +220,6 @@
     "concepts",
     "sources/youtube",
     "sources",
-    "inbox",
-    "Welcome.md"
+    "inbox"
   ]
 }

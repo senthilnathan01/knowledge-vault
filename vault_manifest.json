@@ -6,10 +6,22 @@
     "tags": ["inbox"]
   },
   {
+    "path": "inbox/Inbox.md",
+    "title": "Inbox Guide",
+    "summary": "Inbox guide for triage and routing",
+    "tags": ["inbox", "starter"]
+  },
+  {
     "path": "sources/youtube/",
     "title": "YouTube Sources",
     "summary": "Detailed source notes from YouTube videos and podcasts",
     "tags": ["sources", "youtube"]
+  },
+  {
+    "path": "sources/youtube/YouTube Sources.md",
+    "title": "YouTube Source Guide",
+    "summary": "YouTube source guide for capture and follow-up",
+    "tags": ["sources", "youtube", "starter"]
   },
   {
     "path": "concepts/",
@@ -18,9 +30,21 @@
     "tags": ["concepts"]
   },
   {
+    "path": "concepts/Concepts.md",
+    "title": "Concepts Guide",
+    "summary": "Concept guide for evergreen notes",
+    "tags": ["concepts", "starter"]
+  },
+  {
     "path": "projects/",
     "title": "Projects",
     "summary": "Active project plans and execution notes",
     "tags": ["projects"]
+  },
+  {
+    "path": "projects/Projects.md",
+    "title": "Projects Guide",
+    "summary": "Project guide for active work",
+    "tags": ["projects", "starter"]
   }
 ]

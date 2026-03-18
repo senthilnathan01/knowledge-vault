@@ -1,5 +1,9 @@
-This is your new *vault*.
+This vault is organized around four simple areas:
 
-Make a note of something, [[create a link]], or try [the Importer](https://help.obsidian.md/Plugins/Importer)!
+- [[VAULT_INDEX|Vault Index]]
+- [[inbox/Inbox|Inbox Guide]]
+- [[sources/youtube/YouTube Sources|YouTube Source Guide]]
+- [[concepts/Concepts|Concepts Guide]]
+- [[projects/Projects|Projects Guide]]
 
-When you're ready, delete this note and make the vault your own.
+Start by capturing quickly, then move durable ideas into concepts and active work into projects.
