@@ -43,7 +43,7 @@ This repository is an Obsidian knowledge vault made of Markdown files.
   - `published_url`
   - `published_at`
 - Add the public article to `published_in` on directly related paper or synthesis notes when useful.
-- Do not commit, push, or deploy either repository unless the user explicitly requests it.
+- After validating requested changes, commit and push them automatically unless the user explicitly says not to. Deployment still requires an explicit request.
 
 ## For YouTube links
 When given a YouTube link:
