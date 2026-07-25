@@ -4,6 +4,7 @@ This is an Obsidian vault tracked with Git and GitHub.
 
 ## Structure
 - `inbox/` - temporary captures
+- `sources/blogs/` - imported published blog articles in Markdown
 - `sources/papers/` - papers and detailed reading notes
 - `sources/papers/_pdf/` - local-only downloaded PDFs, ignored by Git
 - `sources/youtube/` - source notes from videos and podcasts

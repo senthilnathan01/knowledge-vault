@@ -14,6 +14,10 @@
 - `sources/papers/Paper Sources.md` — paper intake, reading, and citation guide
 - `sources/papers/_pdf/` — local-only downloaded PDFs; ignored by Git
 
+## Sources / Blogs
+- `sources/blogs/` — published blog articles imported as private Markdown source notes
+- `sources/blogs/Blog Sources.md` — catalog of all imported articles with publication dates and original URLs
+
 ## Concepts
 - `concepts/` — evergreen ideas, frameworks, and distilled learnings
 - `concepts/Concepts.md` — concept guide for evergreen notes

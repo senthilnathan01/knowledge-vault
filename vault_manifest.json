@@ -106,5 +106,137 @@
     "title": "Research Workflow",
     "summary": "End-to-end workflow from private research to public garden publication",
     "tags": ["workflow", "research", "publishing"]
+  },
+  {
+    "path": "sources/blogs/",
+    "title": "Blog Sources",
+    "summary": "Published blog articles imported as private research sources",
+    "tags": ["sources", "blogs"]
+  },
+  {
+    "path": "sources/blogs/Blog Sources.md",
+    "title": "Blog Sources Guide",
+    "summary": "Catalog and provenance guide for imported blog articles",
+    "tags": ["sources", "blogs", "guide"]
+  },
+  {
+    "path": "sources/blogs/ai-is-moving-too-fast-here-is-how-i-am-keeping-up.md",
+    "title": "AI is moving too fast. Here is how I am keeping up",
+    "summary": "Much of the overwhelm around AI comes from familiar software ideas being dressed up in new vocabulary. Reframing it that way makes keeping up much easier.",
+    "tags": ["sources", "blogs", "non-tech"]
+  },
+  {
+    "path": "sources/blogs/do-not-let-llm-costs-kill-a-good-idea-too-early.md",
+    "title": "Do Not Let LLM Costs Kill a Good Idea Too Early",
+    "summary": "Building is getting easier. The only thing that matters now is a GOOD IDEA and FREAKING GREAT EXECUTION.",
+    "tags": ["sources", "blogs", "non-tech"]
+  },
+  {
+    "path": "sources/blogs/git-worktrees-the-essential-git-feature-many-developers-still-do-not-use.md",
+    "title": "Git Worktrees: The Essential Git Feature Many Developers Still Do Not Use",
+    "summary": "They create branches. They switch between them. They merge, rebase, push, and pull. These skills are enough to build real systems and collaborate effectively.",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/google-analytics-worked-on-localhost-but-failed-on-github-pages-heres-what-i-learned.md",
+    "title": "Google Analytics Worked on Localhost but Failed on GitHub Pages. Here’s What I Learned.",
+    "summary": "Google Analytics Worked on Localhost but Failed on GitHub Pages. Here’s What I Learned.",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/i-am-choosing-hard-problems.md",
+    "title": "I Am Choosing Hard Problems",
+    "summary": "Every day has a real constraint. Every decision has a cost. Every solved problem moves the company forward.",
+    "tags": ["sources", "blogs", "non-tech"]
+  },
+  {
+    "path": "sources/blogs/it-is-high-time-to-start-documenting-your-life-and-work.md",
+    "title": "It is high time to start documenting your life and work.",
+    "summary": "Agents will be far more useful to people who have structured, persistent memory. (I have started using obsidian)",
+    "tags": ["sources", "blogs", "non-tech"]
+  },
+  {
+    "path": "sources/blogs/joy-is-the-key-to-greatness.md",
+    "title": "Joy Is the Key to Greatness",
+    "summary": "I felt low almost all the time, and it affected everything else. I could not learn properly. I could not work properly. I could not stay consistent. Even when I sat down to do something, there was no real energy behind…",
+    "tags": ["sources", "blogs", "non-tech"]
+  },
+  {
+    "path": "sources/blogs/linear-attention-explained.md",
+    "title": "Linear Attention Explained: The Core Concept and the Math, Without the Fluff",
+    "summary": "This article cuts the fluff, gets straight to the core concept and math, and explains every variable as it appears. Nothing is left undefined.",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/part-2-training-and-loss-functions-what-youre-actually-optimizing.md",
+    "title": "Part 2: Training and Loss Functions (What You’re Actually Optimizing)",
+    "summary": "(2nd Part of the 7Part series on what it takes to be a strong ML engineer in 2026)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/part-3-llms-and-modern-ml-the-new-fundamentals.md",
+    "title": "Part 3: LLMs and Modern ML (The New Fundamentals)",
+    "summary": "(3rd Part of the 7Part series on what it takes to be a strong ML engineer in 2026)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/part-4-production-systems-where-good-models-can-die.md",
+    "title": "Part 4: Production Systems (Where Good Models Can Die)",
+    "summary": "(4th Part of the 7Part series on what it takes to be a strong ML engineer in 2026)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/part-5-the-critical-pieces-observability-agents-security.md",
+    "title": "Part 5: The Critical Pieces: Observability, Agents, Security",
+    "summary": "(5th Part of the 7Part series on what it takes to be a strong ML engineer in 2026)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/part-6-evals-optimization-and-organizational-reality-what-actually-determines-success.md",
+    "title": "Part 6: Evals, Optimization and Organizational Reality (What Actually Determines Success)",
+    "summary": "Part 6: Evals, Optimization and Organizational Reality (What Actually Determines Success)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/part-7-putting-it-all-together-what-this-actually-means.md",
+    "title": "Part 7: Putting It All Together (What This Actually Means)",
+    "summary": "(Final Post of the 7Part series on what it takes to be a strong ML engineer in 2026)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/sliding-window-attention-explained-the-core-concept-and-the-math-without-any-fluff.md",
+    "title": "Sliding Window Attention Explained: The Core Concept and the Math, without any fluff :)",
+    "summary": "Sliding Window Attention Explained: The Core Concept and the Math, without any fluff :)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/vllm-a-more-efficient-way-to-serve-large-language-models.md",
+    "title": "vLLM: A More Efficient Way to Serve Large Language Models",
+    "summary": "When an LLM generates a response, it stores intermediate computations called the KV cache in GPU memory at every step. Traditional serving frameworks preallocated memory for each request based on the maximum possible…",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/what-it-actually-takes-to-be-a-strong-ai-ml-engineer-in-2026.md",
+    "title": "What it actually takes to be a strong AI/ML engineer in 2026",
+    "summary": "So I’m starting a 7part series this week to break down the fundamentals that actually matter.",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/why-crypto-has-not-beaten-wall-street-yet-and-why-that-question-might-be-wrong.md",
+    "title": "Why Crypto Has Not Beaten Wall Street Yet (And Why That Question Might Be Wrong)",
+    "summary": "Why Crypto Has Not Beaten Wall Street Yet (And Why That Question Might Be Wrong)",
+    "tags": ["sources", "blogs", "tech"]
+  },
+  {
+    "path": "sources/blogs/why-real-change-needs-a-bridge-between-who-you-are-and-who-you-want-to-become.md",
+    "title": "Why Real Change Needs a Bridge Between Who You Are and Who You Want to Become",
+    "summary": "You do not just wake up one morning and become someone new because you understood a better idea. Your mind may understand it, but the rest of you may still be living somewhere else. Your emotions may still be in the old…",
+    "tags": ["sources", "blogs", "non-tech"]
+  },
+  {
+    "path": "sources/blogs/why-you-should-not-found-if-you-do-not-wanna-solo-found.md",
+    "title": "Why You Should Not Found Anything If You Don’t Want to Solo Found",
+    "summary": "My current view, as someone who has not founded yet: start alone if you can. Do not make finding a cofounder step one before you have validated an idea, built anything, or spoken to customers. I think early cofounder…",
+    "tags": ["sources", "blogs", "non-tech"]
   }
 ]

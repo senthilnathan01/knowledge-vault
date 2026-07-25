@@ -16,6 +16,7 @@ This repository is an Obsidian knowledge vault made of Markdown files.
 - Raw captures and temporary notes -> `inbox/`
 - Papers and paper-specific reading notes -> `sources/papers/`
 - Downloaded paper PDFs -> `sources/papers/_pdf/` (local-only and Git-ignored)
+- Published blog articles used as private source material -> `sources/blogs/`
 - YouTube or podcast source notes -> `sources/youtube/`
 - Evergreen ideas and distilled knowledge -> `concepts/`
 - Active plans, product ideas, and execution docs -> `projects/`
