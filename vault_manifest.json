@@ -24,6 +24,12 @@
     "tags": ["sources", "youtube", "starter"]
   },
   {
+    "path": "sources/youtube/What It's Like to Work at a $1.4 Trillion Sovereign Wealth Fund.md",
+    "title": "What It's Like to Work at a $1.4 Trillion Sovereign Wealth Fund",
+    "summary": "Source analysis on permanent capital, institutional memory, mandate design, and leadership at sovereign-fund scale",
+    "tags": ["sources", "youtube", "risk-management", "sovereign-wealth"]
+  },
+  {
     "path": "sources/papers/",
     "title": "Paper Sources",
     "summary": "Private paper notes, reading evidence, and local-only PDF storage",
