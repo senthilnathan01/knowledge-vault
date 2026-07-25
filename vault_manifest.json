@@ -24,6 +24,18 @@
     "tags": ["sources", "youtube", "starter"]
   },
   {
+    "path": "sources/papers/",
+    "title": "Paper Sources",
+    "summary": "Private paper notes, reading evidence, and local-only PDF storage",
+    "tags": ["sources", "papers"]
+  },
+  {
+    "path": "sources/papers/Paper Sources.md",
+    "title": "Paper Source Guide",
+    "summary": "Paper intake, evidence capture, citation, and reading-status guide",
+    "tags": ["sources", "papers", "guide"]
+  },
+  {
     "path": "concepts/",
     "title": "Concepts",
     "summary": "Evergreen distilled knowledge and frameworks",
@@ -46,5 +58,47 @@
     "title": "Projects Guide",
     "summary": "Project guide for active work",
     "tags": ["projects", "starter"]
+  },
+  {
+    "path": "templates/",
+    "title": "Templates",
+    "summary": "Reusable private research and publication-staging templates",
+    "tags": ["templates", "research"]
+  },
+  {
+    "path": "templates/Templates.md",
+    "title": "Templates Guide",
+    "summary": "Guide to the vault research templates",
+    "tags": ["templates", "guide"]
+  },
+  {
+    "path": "templates/Research Brief.md",
+    "title": "Research Brief Template",
+    "summary": "Template for defining a research question, scope, and stopping condition",
+    "tags": ["templates", "research", "brief"]
+  },
+  {
+    "path": "templates/Paper Note.md",
+    "title": "Paper Note Template",
+    "summary": "Template for bibliographic metadata, reading notes, and located evidence",
+    "tags": ["templates", "papers"]
+  },
+  {
+    "path": "templates/Synthesis Note.md",
+    "title": "Synthesis Note Template",
+    "summary": "Template for comparing evidence and drawing qualified conclusions",
+    "tags": ["templates", "synthesis"]
+  },
+  {
+    "path": "templates/Publication Draft.md",
+    "title": "Publication Draft Template",
+    "summary": "Private staging template and safety checklist for public promotion",
+    "tags": ["templates", "publishing"]
+  },
+  {
+    "path": "RESEARCH_WORKFLOW.md",
+    "title": "Research Workflow",
+    "summary": "End-to-end workflow from private research to public garden publication",
+    "tags": ["workflow", "research", "publishing"]
   }
 ]
