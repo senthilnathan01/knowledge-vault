@@ -21,6 +21,9 @@
 ## Concepts
 - `concepts/` — evergreen ideas, frameworks, and distilled learnings
 - `concepts/Concepts.md` — concept guide for evergreen notes
+- `concepts/AI Safety.md` — hub note and top-down learning route for AI safety
+- `concepts/AI Safety - Foundations.md` — Step 1: the map, the accident/misuse/structural taxonomy, the core argument, and the major camps
+- `concepts/AI Safety - Problem Framings.md` — Step 2: capability vs. alignment, outer/inner alignment, reward hacking, goal misgeneralization, orthogonality and instrumental convergence
 
 ## Projects
 - `projects/` — active project plans, execution notes, and product thinking
@@ -33,6 +36,7 @@
 - `templates/Paper Note.md` — structured paper reading note
 - `templates/Synthesis Note.md` — multi-source synthesis
 - `templates/Publication Draft.md` — private staging note for public promotion
+- `templates/Note Style Guide.md` — lightweight writing, citation, and diagram conventions for notes
 
 ## Workflow
 - `RESEARCH_WORKFLOW.md` — end-to-end private research and public promotion workflow

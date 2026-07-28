@@ -54,6 +54,24 @@
     "tags": ["concepts", "starter"]
   },
   {
+    "path": "concepts/AI Safety.md",
+    "title": "AI Safety",
+    "summary": "Hub note and top-down learning route for studying AI safety, focused on existential risk and prosaic alignment",
+    "tags": ["concepts", "ai-safety", "learning-route"]
+  },
+  {
+    "path": "concepts/AI Safety - Foundations.md",
+    "title": "AI Safety: the map and the case",
+    "summary": "Step 1 of the AI safety route: the four sub-fields, the accident/misuse/structural taxonomy, the core P1-P3 argument, and the major camps",
+    "tags": ["concepts", "ai-safety", "foundations"]
+  },
+  {
+    "path": "concepts/AI Safety - Problem Framings.md",
+    "title": "AI Safety: the core problem framings",
+    "summary": "Step 2 of the AI safety route: capability vs. alignment, outer/inner alignment, reward hacking and specification gaming, goal misgeneralization, orthogonality and instrumental convergence",
+    "tags": ["concepts", "ai-safety", "alignment", "framings"]
+  },
+  {
     "path": "projects/",
     "title": "Projects",
     "summary": "Active project plans and execution notes",
@@ -100,6 +118,12 @@
     "title": "Publication Draft Template",
     "summary": "Private staging template and safety checklist for public promotion",
     "tags": ["templates", "publishing"]
+  },
+  {
+    "path": "templates/Note Style Guide.md",
+    "title": "Note Style Guide",
+    "summary": "Lightweight distillation of the humanizer skill: writing checklist, footnote-citation convention, and Mermaid diagram guidance for vault notes",
+    "tags": ["templates", "reference", "writing"]
   },
   {
     "path": "RESEARCH_WORKFLOW.md",
