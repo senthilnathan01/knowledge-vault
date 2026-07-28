@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Field Notes · Goal misgeneralization</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfcfb; --raise:#f3f6f4;
+    --ink:#141917; --muted:#66716b;
+    --line:#dfe5e1; --line2:#b8d3c6;
+    --accent:#087652; --accent2:#064c37; --mint:#dff7ec;
+    --sans:"Geist",ui-sans-serif,system-ui,sans-serif;
+    --mono:"Geist Mono",ui-monospace,SFMono-Regular,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#e9ece9}
+  .card{
+    width:1080px;height:1350px;position:relative;overflow:hidden;
+    background:var(--paper);color:var(--ink);
+    font-family:var(--sans);
+    padding:84px 84px 72px;display:flex;flex-direction:column;justify-content:space-between;
+  }
+  /* faint notebook dot-grid */
+  .card::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(circle, rgba(20,25,23,.05) 1px, transparent 1.5px);
+    background-size:26px 26px;
+  }
+  .card>*{position:relative;z-index:1}
+
+  /* header */
+  .top{display:flex;align-items:center;justify-content:space-between;
+    border-bottom:1px solid var(--line);padding-bottom:20px}
+  .eyebrow{font-family:var(--mono);font-size:16px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent)}
+  .eyebrow .sep{color:var(--line2);margin:0 8px}
+  .idx{font-family:var(--mono);font-size:16px;letter-spacing:.1em;color:var(--muted)}
+
+  /* middle */
+  .mid{display:flex;flex-direction:column}
+  .tag{font-family:var(--mono);font-size:15px;font-weight:500;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:20px}
+  h1{font-family:var(--sans);font-weight:700;font-size:74px;line-height:1.0;
+    letter-spacing:-.04em;color:var(--ink);max-width:15ch}
+  h1 em{font-style:normal;color:var(--accent)}
+  .dek{font-size:26px;line-height:1.45;color:var(--muted);margin-top:20px;max-width:26ch}
+
+  .scene{margin-top:44px}
+  .scene text{font-family:var(--mono)}
+
+  .take{margin-top:44px;font-size:30px;font-weight:500;letter-spacing:-.01em;line-height:1.3}
+  .take em{font-style:normal;color:var(--accent);font-weight:600}
+
+  /* footer */
+  .foot{display:flex;align-items:center;justify-content:space-between;
+    border-top:1px solid var(--line);padding-top:20px;
+    font-family:var(--mono);font-size:15px;color:var(--muted)}
+  .foot .src{letter-spacing:.01em}
+  .foot .who{color:var(--accent2);font-weight:600;letter-spacing:.04em}
+</style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="top">
+      <div class="eyebrow">AI Safety<span class="sep">-</span>Goal misgeneralization</div>
+      <div class="idx">#2 / 365</div>
+    </div>
+
+    <div class="mid">
+      <h1>It learned the corner,<br/>not the <em>gem</em>.</h1>
+      <p class="dek">Move the gem, and the agent keeps racing to where it used to be.</p>
+
+      <div class="scene">
+        <svg viewBox="0 0 912 372" width="912" height="372" role="img"
+             aria-label="Two mazes. In training the gem sits in the top-right corner and the agent reaches it. At test the gem has moved to the center, but the agent still runs to the empty corner.">
+          <defs>
+            <marker id="tip" markerWidth="9" markerHeight="9" refX="5.5" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#087652"/>
+            </marker>
+          </defs>
+
+          <!-- ============ PANEL A : TRAINING ============ -->
+          <g>
+            <rect x="1" y="1" width="430" height="330" fill="none" stroke="#dfe5e1"/>
+            <text x="22" y="34" font-size="15" letter-spacing="3" fill="#66716b">TRAINING</text>
+
+            <!-- dot grid 6x4 -->
+            <g fill="#b8d3c6">
+              <circle cx="72" cy="92" r="2.4"/><circle cx="136" cy="92" r="2.4"/><circle cx="200" cy="92" r="2.4"/><circle cx="264" cy="92" r="2.4"/><circle cx="328" cy="92" r="2.4"/><circle cx="392" cy="92" r="2.4"/>
+              <circle cx="72" cy="156" r="2.4"/><circle cx="136" cy="156" r="2.4"/><circle cx="200" cy="156" r="2.4"/><circle cx="264" cy="156" r="2.4"/><circle cx="328" cy="156" r="2.4"/><circle cx="392" cy="156" r="2.4"/>
+              <circle cx="72" cy="220" r="2.4"/><circle cx="136" cy="220" r="2.4"/><circle cx="200" cy="220" r="2.4"/><circle cx="264" cy="220" r="2.4"/><circle cx="328" cy="220" r="2.4"/><circle cx="392" cy="220" r="2.4"/>
+              <circle cx="72" cy="284" r="2.4"/><circle cx="136" cy="284" r="2.4"/><circle cx="200" cy="284" r="2.4"/><circle cx="264" cy="284" r="2.4"/><circle cx="328" cy="284" r="2.4"/><circle cx="392" cy="284" r="2.4"/>
+            </g>
+
+            <!-- agent path to top-right -->
+            <polyline points="72,284 72,156 200,156 200,92 392,92" fill="none"
+              stroke="#087652" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#tip)"/>
+            <!-- start -->
+            <circle cx="72" cy="284" r="5" fill="#141917"/>
+            <text x="60" y="310" font-size="13" fill="#66716b">start</text>
+
+            <!-- gem in corner, reached -->
+            <circle cx="392" cy="92" r="17" fill="none" stroke="#141917" stroke-width="2.5"/>
+            <path d="M392,80 L403,92 L392,104 L381,92 Z" fill="#087652"/>
+
+            <text x="2" y="362" font-size="14" fill="#66716b">reaches the gem</text>
+          </g>
+
+          <!-- ============ PANEL B : TEST ============ -->
+          <g transform="translate(481,0)">
+            <rect x="1" y="1" width="430" height="330" fill="none" stroke="#dfe5e1"/>
+            <text x="22" y="34" font-size="15" letter-spacing="3" fill="#66716b">TEST&#160;&#160;·&#160;&#160;GEM MOVED</text>
+
+            <g fill="#b8d3c6">
+              <circle cx="72" cy="92" r="2.4"/><circle cx="136" cy="92" r="2.4"/><circle cx="200" cy="92" r="2.4"/><circle cx="264" cy="92" r="2.4"/><circle cx="328" cy="92" r="2.4"/><circle cx="392" cy="92" r="2.4"/>
+              <circle cx="72" cy="156" r="2.4"/><circle cx="136" cy="156" r="2.4"/><circle cx="200" cy="156" r="2.4"/><circle cx="264" cy="156" r="2.4"/><circle cx="328" cy="156" r="2.4"/><circle cx="392" cy="156" r="2.4"/>
+              <circle cx="72" cy="220" r="2.4"/><circle cx="136" cy="220" r="2.4"/><circle cx="200" cy="220" r="2.4"/><circle cx="264" cy="220" r="2.4"/><circle cx="328" cy="220" r="2.4"/><circle cx="392" cy="220" r="2.4"/>
+              <circle cx="72" cy="284" r="2.4"/><circle cx="136" cy="284" r="2.4"/><circle cx="200" cy="284" r="2.4"/><circle cx="264" cy="284" r="2.4"/><circle cx="328" cy="284" r="2.4"/><circle cx="392" cy="284" r="2.4"/>
+            </g>
+
+            <!-- same path, still to the empty corner -->
+            <polyline points="72,284 72,156 200,156 200,92 392,92" fill="none"
+              stroke="#087652" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#tip)"/>
+            <circle cx="72" cy="284" r="5" fill="#141917"/>
+            <text x="60" y="310" font-size="13" fill="#66716b">start</text>
+
+            <!-- ghost of the training gem: where the agent expects it -->
+            <path d="M392,80 L403,92 L392,104 L381,92 Z" fill="none" stroke="#b8d3c6" stroke-width="1.5" stroke-dasharray="3 4"/>
+            <text x="410" y="70" text-anchor="end" font-size="12.5" fill="#66716b">trained spot</text>
+
+            <!-- agent ends at the EMPTY corner -->
+            <circle cx="392" cy="92" r="17" fill="none" stroke="#141917" stroke-width="2.5"/>
+
+            <!-- gem now in the middle, ignored -->
+            <circle cx="200" cy="156" r="22" fill="none" stroke="#b8d3c6" stroke-width="1.5" stroke-dasharray="3 6"/>
+            <path d="M200,144 L211,156 L200,168 L189,156 Z" fill="#087652"/>
+            <text x="200" y="196" text-anchor="middle" font-size="12.5" fill="#087652">the gem</text>
+
+            <text x="2" y="362" font-size="14" fill="#087652">runs to the corner, ignores the gem</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="take">The skills transferred. <em>The goal didn't.</em></p>
+    </div>
+
+    <div class="foot">
+      <span class="src">SOURCE&#160;&#160;Langosco et al. 2022 · Shah et al. 2022</span>
+      <span class="who">@arcane_bloom</span>
+    </div>
+
+  </div>
+</body>
+</html>
