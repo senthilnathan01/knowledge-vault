@@ -24,10 +24,12 @@
 - `concepts/AI Safety.md` — hub note and top-down learning route for AI safety
 - `concepts/AI Safety - Foundations.md` — Step 1: the map, the accident/misuse/structural taxonomy, the core argument, and the major camps
 - `concepts/AI Safety - Problem Framings.md` — Step 2: capability vs. alignment, outer/inner alignment, reward hacking, goal misgeneralization, orthogonality and instrumental convergence
+- `concepts/AI Safety - Risk by Capability Level.md` — Step 3: risk by capability tier — today's misuse/robustness, frontier misalignment signals (sleeper agents, alignment faking, scheming), advanced-AI loss of control
 
 ## Projects
 - `projects/` — active project plans, execution notes, and product thinking
 - `projects/Projects.md` — project guide for active work
+- `projects/Game Theory and Strategic Interaction.md` — project hub for game theory, strategic interaction, and related applications
 
 ## Templates
 - `templates/` — reusable Obsidian templates

@@ -72,6 +72,12 @@
     "tags": ["concepts", "ai-safety", "alignment", "framings"]
   },
   {
+    "path": "concepts/AI Safety - Risk by Capability Level.md",
+    "title": "AI Safety: risk by capability level",
+    "summary": "Step 3 of the AI safety route: risk located on a capability timeline — today's misuse/robustness (jailbreaks, prompt injection, sycophancy), frontier misalignment signals (sleeper agents, alignment faking, in-context scheming, dangerous-capability evals), and advanced-AI loss of control",
+    "tags": ["concepts", "ai-safety", "risk", "empirical"]
+  },
+  {
     "path": "projects/",
     "title": "Projects",
     "summary": "Active project plans and execution notes",
@@ -82,6 +88,12 @@
     "title": "Projects Guide",
     "summary": "Project guide for active work",
     "tags": ["projects", "starter"]
+  },
+  {
+    "path": "projects/Game Theory and Strategic Interaction.md",
+    "title": "Game Theory and Strategic Interaction",
+    "summary": "Active project hub for learning and researching game theory, strategic interaction, cooperation, competition, mechanism design, evolution, and AI applications",
+    "tags": ["projects", "game-theory", "strategic-interaction", "decision-theory", "ai-safety"]
   },
   {
     "path": "templates/",
