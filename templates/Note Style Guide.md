@@ -13,6 +13,17 @@ A lightweight checklist for writing vault notes so they read like a person wrote
 
 Write the way you would explain it to a sharp colleague. Vary sentence length. Have a view. Prefer the specific fact over the vague claim.
 
+## Build a map, not a glossary (the most important rule)
+
+A note that is just "concept, then a flat explanation, then the next concept" is boring and teaches nobody. Every note should connect the dots:
+
+- Say **why each idea matters**, not just what it is. Tie it to a consequence.
+- **Link ideas to each other** explicitly: "this is the empirical version of X from the last note", "this is why Y will matter in Step 4".
+- **Point the reader at what to focus on and why.** If one small concept is secretly load-bearing for something big, say so, so attention lands there.
+- Use **analogies and fully-worked examples**. Gloss rare/technical words in plain English, and give the word origin when it helps (e.g. *mesa* = Greek "within"; *prosaic* = Latin "in prose", so ordinary/everyday).
+- When you say something *happens*, explain the **mechanism** (the why), never just the what.
+- The reader is learning, so err toward **more verbose and maximally consumable**. Learnability beats terseness. This overrides the usual "cut for brevity" instinct.
+
 ## Do
 
 - Use plain verbs: `use` (not leverage/utilize), `is`/`has` (not serves as/boasts), `start` (not embark/commence).
