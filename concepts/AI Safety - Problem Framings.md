@@ -135,6 +135,14 @@ flowchart LR
 
 Read together: orthogonality says capability does not buy us good goals, and instrumental convergence says a capable system with the wrong goal has reasons to resist correction and accumulate power. That is the theoretical spine of the existential case from Step 1.
 
+### Why doesn't intelligence just produce wisdom?
+
+The natural objection: in people, smarter usually tracks wiser. So why wouldn't a smarter AI converge on decent values too, instead of staying orthogonal to them?
+
+The human correlation is real, but it rides on something an AI does not get for free. Every human, however sharp, starts from the same pre-installed kit: empathy, social instinct, guilt, a drive to belong, laid down by evolution and reinforced by culture before any individual gets smarter than average.[^bostrom-will] Getting more intelligent, for a person, mostly means getting better at pursuing goals that already sit on top of that shared foundation. It is not acquiring the foundation itself. An AI's objective comes from how it was trained, not from a few million years of being a social mammal whose survival depended on its tribe. So added capability just makes it more effective at whatever target it already has; it does not install compassion as a side effect, because there was never a compassion-shaped scaffold underneath to begin with.
+
+And the human correlation is looser than the intuition assumes, even on its own terms. Plenty of highly intelligent people have turned that intelligence toward cruelty or narrow self-interest rather than away from it. In those cases the intelligence amplified an existing aim instead of revising it, which is the orthogonality thesis's prediction, not the "smarter implies wiser" intuition's.
+
 ## The through-line
 
 Step 1's P1 to P3 now have names. P1 (we train on proxies) is the outer alignment problem and shows up as reward hacking. The gap between the objective we set and the goal the model internalizes is inner alignment, seen in the wild as goal misgeneralization. And P3 (why a wrong objective at scale is catastrophic rather than annoying) is orthogonality plus instrumental convergence. The rest of the route is about what we can actually do about each.
