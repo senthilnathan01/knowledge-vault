@@ -9,6 +9,9 @@
 - `sources/youtube/YouTube Sources.md` — YouTube source guide for capture and follow-up
 - `sources/youtube/What It's Like to Work at a $1.4 Trillion Sovereign Wealth Fund.md` — source analysis on permanent capital, institutional memory, mandate design, and leadership at scale
 
+## Sources / Courses
+- `sources/courses/` — notes from online courses, one note per unit, written after reading and discussion
+
 ## Sources / Papers
 - `sources/papers/` — private paper notes and reading evidence
 - `sources/papers/Paper Sources.md` — paper intake, reading, and citation guide
@@ -29,6 +32,7 @@
 ## Projects
 - `projects/` — active project plans, execution notes, and product thinking
 - `projects/Projects.md` — project guide for active work
+- `projects/BlueDot AGI Strategy Course.md` — course hub: curriculum, progress, exercise answers, and links to the AI safety route
 - `projects/Game Theory and Strategic Interaction.md` — project hub for game theory, strategic interaction, and related applications
 
 ## Templates

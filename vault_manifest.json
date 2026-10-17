@@ -30,6 +30,12 @@
     "tags": ["sources", "youtube", "risk-management", "sovereign-wealth"]
   },
   {
+    "path": "sources/courses/",
+    "title": "Course Sources",
+    "summary": "Notes from online courses, one note per unit",
+    "tags": ["sources", "courses"]
+  },
+  {
     "path": "sources/papers/",
     "title": "Paper Sources",
     "summary": "Private paper notes, reading evidence, and local-only PDF storage",
@@ -88,6 +94,12 @@
     "title": "Projects Guide",
     "summary": "Project guide for active work",
     "tags": ["projects", "starter"]
+  },
+  {
+    "path": "projects/BlueDot AGI Strategy Course.md",
+    "title": "BlueDot AGI Strategy Course",
+    "summary": "Course hub: curriculum and progress, exercise answers, and how the course maps onto the AI safety learning route",
+    "tags": ["projects", "ai-safety", "agi-strategy", "course"]
   },
   {
     "path": "projects/Game Theory and Strategic Interaction.md",

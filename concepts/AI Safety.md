@@ -21,6 +21,10 @@ My angle: I care most about the **existential / long-term** case, and about **pr
 5. Governance and the ecosystem — labs, policy, evals orgs, standards.
 6. Open problems and my own synthesis.
 
+## Running alongside: BlueDot AGI Strategy course
+
+From October 2026 I'm also taking BlueDot's AGI Strategy course, tracked in [[BlueDot AGI Strategy Course]]. It is mostly Step 5 material (strategy and governance) reached early, and Unit 1's July 2026 OpenAI / Hugging Face incident will likely update Step 3.
+
 ## How we're working
 
 - Discuss first, capture the note after.
