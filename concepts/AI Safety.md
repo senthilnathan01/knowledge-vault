@@ -16,8 +16,8 @@ My angle: I care most about the **existential / long-term** case, and about **pr
 
 1. [[AI Safety - Foundations|The map and the case]] — what "AI safety" means, why it matters, the major camps. **Done.**
 2. [[AI Safety - Problem Framings|Core problem framings]] — capability vs. alignment, outer/inner alignment, reward hacking, goal misgeneralization, orthogonality and instrumental convergence. **Done.**
-3. Where risk enters, by capability level — present harms, misalignment in current LLMs, speculative advanced-AI risk.
-4. Technical alignment approaches — RLHF, Constitutional AI, scalable oversight, interpretability, red-teaming, evals.
+3. [[AI Safety - Risk by Capability Level|Where risk enters, by capability level]] — present harms and misuse, early misalignment signals in frontier LLMs, speculative advanced-AI risk. **Done.**
+4. Technical alignment approaches — RLHF, Constitutional AI, scalable oversight, interpretability, red-teaming, evals. Likely first deep dive: **mechanistic interpretability**.
 5. Governance and the ecosystem — labs, policy, evals orgs, standards.
 6. Open problems and my own synthesis.
 

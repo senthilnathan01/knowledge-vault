@@ -74,7 +74,7 @@
   {
     "path": "concepts/AI Safety - Risk by Capability Level.md",
     "title": "AI Safety: risk by capability level",
-    "summary": "Step 3 of the AI safety route: risk located on a capability timeline — today's misuse/robustness (jailbreaks, prompt injection, sycophancy), frontier misalignment signals (sleeper agents, alignment faking, in-context scheming, dangerous-capability evals), and advanced-AI loss of control",
+    "summary": "Step 3 of the AI safety route: risk located on a capability timeline — today's misuse/robustness (jailbreaks, prompt injection, sycophancy), frontier misalignment signals (sleeper agents, alignment faking, in-context scheming, dangerous-capability evals), and advanced-AI loss of control; includes a worked walkthrough of alignment faking and its 25-model replication",
     "tags": ["concepts", "ai-safety", "risk", "empirical"]
   },
   {
