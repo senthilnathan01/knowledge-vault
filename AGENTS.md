@@ -56,9 +56,10 @@ When given a YouTube link:
 6. Update `vault_manifest.json`
 
 ## Editing style
+- Write notes per `templates/Note Style Guide.md`, which applies the `consumable-writing` skill in `.claude/skills/consumable-writing/SKILL.md`.
 - Do not rewrite unrelated sections.
 - Keep changes high-signal and organized.
-- Prefer concise headings and bullets.
+- Use headings that state the point; use lists for parallel items, tables for comparisons, and prose for reasoning.
 - Add a short `## Sources` section when a note comes from external material.
 
 ## Output expectation

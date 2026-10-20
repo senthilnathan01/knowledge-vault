@@ -146,8 +146,14 @@
   {
     "path": "templates/Note Style Guide.md",
     "title": "Note Style Guide",
-    "summary": "Lightweight distillation of the humanizer skill: writing checklist, footnote-citation convention, and Mermaid diagram guidance for vault notes",
+    "summary": "How to write vault notes: the consumable-writing skill applied to the vault (newcomer reader, one idea at a time, point-first headings, certainty marking), plus linking notes into a map, footnote citations, and Mermaid diagrams",
     "tags": ["templates", "reference", "writing"]
+  },
+  {
+    "path": ".claude/skills/consumable-writing/SKILL.md",
+    "title": "Consumable writing skill",
+    "summary": "Writing skill for explanations a newcomer can read once, understand and remember; the basis of the note style guide",
+    "tags": ["skill", "writing", "reference"]
   },
   {
     "path": "RESEARCH_WORKFLOW.md",

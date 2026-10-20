@@ -42,7 +42,8 @@
 - `templates/Paper Note.md` — structured paper reading note
 - `templates/Synthesis Note.md` — multi-source synthesis
 - `templates/Publication Draft.md` — private staging note for public promotion
-- `templates/Note Style Guide.md` — lightweight writing, citation, and diagram conventions for notes
+- `templates/Note Style Guide.md` — how to write notes: consumable writing for a newcomer, linking notes into a map, certainty marking, footnote citations, and diagrams
 
 ## Workflow
+- `.claude/skills/consumable-writing/SKILL.md` — the consumable-writing skill the note style guide is built on
 - `RESEARCH_WORKFLOW.md` — end-to-end private research and public promotion workflow
