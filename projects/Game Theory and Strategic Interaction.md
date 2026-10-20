@@ -38,20 +38,20 @@ Game theory is a common language for strategic situations. It can clarify why in
 
 ### Exclude for now
 
-- A comprehensive history of every school of thought
+- A full history of every school of thought
 - Advanced mathematical proofs before the core concepts are understood
 - Treating every optimization or decision problem as a game-theoretic problem
 - Public publication before claims, citations, and privacy review are complete
 
 ## Learning and research route
 
-1. **Foundations** — formalize games, strategies, payoffs, information, and equilibrium.
-2. **Canonical games** — prisoner’s dilemma, coordination, chicken, battle of the sexes, stag hunt, ultimatum, and public-goods games.
-3. **Dynamic interaction** — sequential games, repeated games, reputation, threats, promises, and credible commitment.
-4. **Private information** — Bayesian games, signaling, screening, adverse selection, and moral hazard.
-5. **Designing the rules** — mechanism design, auctions, voting, matching, and institutional incentives.
-6. **Beyond ideal rationality** — behavioral, experimental, evolutionary, and learning perspectives.
-7. **Applications and synthesis** — connect the framework to organizations, geopolitics, AI systems, and safety problems.
+1. Foundations: formalize games, strategies, payoffs, information, and equilibrium.
+2. Canonical games: prisoner's dilemma, coordination, chicken, battle of the sexes, stag hunt, ultimatum, and public-goods games.
+3. Dynamic interaction: sequential games, repeated games, reputation, threats, promises, and credible commitment.
+4. Private information: Bayesian games, signaling, screening, adverse selection, and moral hazard.
+5. Designing the rules: mechanism design, auctions, voting, matching, and institutional incentives.
+6. Beyond ideal rationality: behavioral, experimental, evolutionary, and learning perspectives.
+7. Applications and synthesis: connect the framework to organizations, geopolitics, AI systems, and safety problems.
 
 ## Working principles
 
