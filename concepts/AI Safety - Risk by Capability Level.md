@@ -17,9 +17,11 @@ The answer is that it is not real-or-fiction. **It is a gradient, and we are par
 
 Picture a dial that turns as AI systems get more capable. As it turns up, the kind of danger changes, and so does our ability to do anything about it.
 
-- **Low capability: misuse.** The AI is a tool, and a human is the one pointing it at something bad. The AI has no agenda. Think of a knife: dangerous only because of the hand holding it.
+- **Low capability: misuse.** The AI is a tool, and a human is the one pointing it at something bad. The AI has no agenda. Think of a knife: dangerous only because of the hand holding it. The knife picture misses one thing: a knife adds no skill, but an AI can supply skill the person lacked (uplift, covered in Tier 1).
 - **Medium capability: accident or misalignment.** The system starts pursuing the wrong goal on its own, not because anyone told it to. No villain is required. Think of a self-driving car that optimizes "get there fast" and runs red lights. Nobody wanted that; the system did it.
 - **High capability: loss of control.** The system is capable enough, and has enough reason to resist correction (instrumental convergence from Step 2), that we may not be able to switch it off or fix it. Think less "tool" and more "agent with its own plans that outmaneuvers your attempts to stop it".
+
+The dial is a simplification in two ways. The dangers add up rather than take turns: misuse does not go away when misalignment appears, which is why today's models show both. And capability is not one dial: a model can be strong at some tasks and weak at others.
 
 As the danger gets bigger, our ability to oversee it gets smaller. The failures we can most easily catch are the least harmful, and the ones that would hurt most are the hardest to see coming. Safety is a race between capability going up and oversight keeping up. That tension is Step 1's premise P2 ("capability outpaces our ability to verify") from [[AI Safety - Foundations|the map and the case]], shown as a moving picture.
 
@@ -124,7 +126,7 @@ In Step 2's terms, this is instrumental convergence again: self-preservation and
 
 Evals are evaluations: test batteries that measure what a model can do. Rather than wait for danger, Phuong et al. (Google DeepMind, 2024) built a systematic battery across persuasion and deception, cyber-security, self-proliferation and self-reasoning, and ran it on frontier models. They found no *strong* dangerous capabilities yet, but early warning signs.[^phuong]
 
-This is the closest thing the field has to a smoke detector. It is also the practical bridge to policy: "responsible scaling policies" at the big labs are built on evals like these deciding whether a model is safe to release. For prosaic-alignment work that is both technical and immediately useful, evals are one of the most hireable corners of the field, and they connect Tier 2 directly to Tier 3 governance.
+This is the closest thing the field has to a smoke detector. The comparison breaks down in one place: a smoke detector reacts to any fire in the room, but an eval only finds the capabilities it was built to test. A clean result means "not found by these tests", not "absent". Evals are also the practical bridge to policy: "responsible scaling policies" at the big labs are built on evals like these deciding whether a model is safe to release. For prosaic-alignment work that is both technical and immediately useful, evals are one of the most hireable corners of the field, and they connect Tier 2 directly to Tier 3 governance.
 
 ## In Tier 3, the danger is losing control of advanced future systems
 
@@ -138,9 +140,16 @@ The estimate models the right epistemic style, and it is worth imitating: a stru
 
 ### Hendrycks et al. sort catastrophic risk into four buckets, and only one is rogue AI
 
-Hendrycks et al. sort catastrophic risk into four buckets: malicious use, AI race (competition forcing labs to cut safety corners), organizational accidents, and rogue AIs.[^catastrophic] Only the last bucket is the science-fiction "rogue AI" one. The other three are structural risks, the accident / misuse / structure taxonomy from Step 1 returning.
+Hendrycks et al. sort catastrophic risk into four buckets: malicious use, AI race (competition forcing labs to cut safety corners), organizational risks (human factors and complex systems making catastrophic accidents more likely), and rogue AIs.[^catastrophic] Only the last bucket is the science-fiction "rogue AI" one. The four buckets map onto the accident / misuse / structural taxonomy from [[AI Safety - Foundations|Step 1]]:
 
-My take: this is where a lot of people misfocus. Most of the realistic danger is structural and human-organizational (races, sloppy deployment), not killer robots. The boring-sounding structural work is underweighted relative to how much it drives outcomes, so that is where effort goes furthest.
+| Hendrycks et al. bucket | Step 1 box | Who or what fails |
+| --- | --- | --- |
+| Malicious use | Misuse | A person who wants harm |
+| AI race | Structural | Competition, with no single bad actor |
+| Organizational risks | Accident | People and processes around the system |
+| Rogue AIs | Accident | The system's own goals (misalignment) |
+
+My take: this is where a lot of people misfocus. Three of the four buckets are about people and institutions, not the model's goals. Most of the realistic danger is structural and human-organizational (races, sloppy deployment), not killer robots. The boring-sounding structural work is underweighted relative to how much it drives outcomes, so that is where effort goes furthest.
 
 ### The CAIS Statement shows frontier builders signed on to the extinction framing
 
