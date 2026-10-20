@@ -46,4 +46,6 @@
 
 ## Workflow
 - `.claude/skills/consumable-writing/SKILL.md` — the consumable-writing skill the note style guide is built on
+- `scripts/check_note_style.py` — checks notes against the style guide's mechanical rules; run by the git pre-commit hook (`.githooks/pre-commit`) and a Claude Code hook (`.claude/settings.json`)
+- `.claude/agents/note-reviewer.md` — reviewer agent that runs the style guide's final check on a note before it is committed
 - `RESEARCH_WORKFLOW.md` — end-to-end private research and public promotion workflow

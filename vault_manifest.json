@@ -156,6 +156,18 @@
     "tags": ["skill", "writing", "reference"]
   },
   {
+    "path": "scripts/check_note_style.py",
+    "title": "Note style check script",
+    "summary": "Checks notes against the mechanical rules of the note style guide (em dashes, curly quotes, AI-tell words, heavy bold, generic headings, undefined footnotes); run by the git pre-commit hook and a Claude Code PostToolUse hook",
+    "tags": ["tooling", "writing", "reference"]
+  },
+  {
+    "path": ".claude/agents/note-reviewer.md",
+    "title": "Note reviewer agent",
+    "summary": "Claude Code agent that reviews a new or changed note against the style guide's final check and reports problems without editing",
+    "tags": ["tooling", "writing", "reference"]
+  },
+  {
     "path": "RESEARCH_WORKFLOW.md",
     "title": "Research Workflow",
     "summary": "End-to-end workflow from private research to public garden publication",

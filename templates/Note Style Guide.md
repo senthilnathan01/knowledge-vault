@@ -116,6 +116,8 @@ Read the draft as the newcomer, and ask:
 - Does it link back to the notes it builds on, and forward to where it matters?
 - What could be cut without losing meaning?
 
+A script catches the mechanical rules: em dashes, curly quotes, AI-tell words, heavy bold, generic headings and footnotes without a definition. Run it with `python3 scripts/check_note_style.py <note>`. The git pre-commit hook and a Claude Code hook also run it automatically, and the pre-commit hook blocks a commit that has errors. The questions above need a reader, so ask the `note-reviewer` agent (`.claude/agents/note-reviewer.md`) to answer them for a note it did not write.
+
 ## Sources
 
 - `consumable-writing` skill, `.claude/skills/consumable-writing/SKILL.md` (the core of this guide).

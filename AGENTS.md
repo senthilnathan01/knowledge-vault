@@ -61,6 +61,7 @@ When given a YouTube link:
 - Keep changes high-signal and organized.
 - Use headings that state the point; use lists for parallel items, tables for comparisons, and prose for reasoning.
 - Add a short `## Sources` section when a note comes from external material.
+- Before committing a new or materially changed note, run `python3 scripts/check_note_style.py <note>` and fix every error, then have a reader who did not write the note run the style guide's final check (in Claude Code: the `note-reviewer` agent). The `.githooks/pre-commit` hook runs the same script on staged notes; enable it once per clone with `git config core.hooksPath .githooks`.
 
 ## Output expectation
 After completing a task, summarize:

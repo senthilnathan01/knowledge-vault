@@ -1,0 +1,6 @@
+#!/bin/sh
+# Block commits whose staged notes break the vault's mechanical style rules
+# (templates/Note Style Guide.md). Enable once per clone:
+#   git config core.hooksPath .githooks
+# Skip once with: git commit --no-verify
+exec python3 "$(git rev-parse --show-toplevel)/scripts/check_note_style.py" --staged

@@ -25,3 +25,10 @@ This is an Obsidian vault tracked with Git and GitHub.
 7. Refresh `VAULT_INDEX.md` and `vault_manifest.json`.
 
 See [[RESEARCH_WORKFLOW|Research Workflow]] for the full lifecycle and publication contract.
+
+## Style checks
+Notes follow `templates/Note Style Guide.md`. `scripts/check_note_style.py` checks the rules a script can catch, and the pre-commit hook in `.githooks/` runs it on every commit. After cloning, enable the hook once:
+
+```bash
+git config core.hooksPath .githooks
+```
