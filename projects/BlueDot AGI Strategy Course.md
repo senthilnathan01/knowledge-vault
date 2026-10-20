@@ -10,7 +10,7 @@ tags: [ai-safety, agi-strategy, course, learning-route]
 
 # BlueDot AGI Strategy Course
 
-Hub for working through BlueDot Impact's **AGI Strategy** course.[^course] Workflow: I read each lesson, we discuss it, and only then does a unit source note go into `sources/courses/`. This page tracks progress, my exercise answers, and how the course plugs into my [[AI Safety]] route.
+Hub for working through BlueDot Impact's **AGI Strategy** course.[^course] Workflow: I read each lesson and either discuss it or say "ingest", which writes a source note for each reading and pulls its ideas into concept notes. This page tracks progress, my exercise answers, and how the course plugs into my [[AI Safety]] route.
 
 ## The course's question
 
@@ -39,11 +39,15 @@ flowchart LR
 
 Durations are the course's estimates.[^course]
 
+Course pages are reading lists, so they get no source note of their own. Each reading gets a source note, and its ideas go into concept notes.
+
 ### Unit 1: The race to AGI
 
-Source note: written after we read and discuss the unit.
-
-- [ ] 1.1 What's at stake? (30 min)
+- [x] 1.1 What's at stake? (30 min), ingested 2026-10-20
+  - Core reading: Daniel Selsam, "Personal Statement on AI Risk" (2026). Source note: [[Daniel Selsam - Personal Statement on AI Risk]]. The course asks which step of his argument you would investigate before agreeing with it.
+  - Recommended by the lesson: Jakub Pachocki, "An Alien Mind" (OpenAI, 2026). Source note: [[Jakub Pachocki - An Alien Mind]].
+  - Ideas pulled out: [[Recursive Self-Improvement]], [[Chain-of-Thought Monitoring]], evaluation awareness and the 2026 agent incidents in [[AI Safety - Risk by Capability Level]], goal vs value alignment in [[AI Safety - Problem Framings]].
+  - Optional readings listed, not yet read: Holden Karnofsky, "The Most Important Century" in a nutshell; Dario Amodei, "Machines of Loving Grace"; Forethought, "Introducing Better Futures"; Sam Altman, "The Gentle Singularity"; Bill Gates, "A turbulent AI era and critical choices to make".[^lesson-1-1]
 - [ ] 1.2 What future do you want? (16 min, exercise)
 - [ ] 1.3 Competition and coordination problems (45 min)
 - [ ] 1.4 Responding to the Hugging Face incident (45 min, exercise)
@@ -86,7 +90,7 @@ Unit titles for 2 to 5 are my labels from the lesson list; the course names Unit
 ## Where to focus
 
 - **Unit 3.2, Loss of control (2h 5min)** is the longest lesson and the direct continuation of my Step 3 Tier 3. Give it the most attention.
-- **Unit 4.2, The technical challenge** is where the course touches Step 4. Use it to decide whether my first Step 4 deep dive should still be mechanistic interpretability, or AI control and evals given the Hugging Face incident.
+- **Unit 4.2, The technical challenge** is where the course touches Step 4. Use it to decide whether my first Step 4 topic should still be mechanistic interpretability, or AI control and evals given the Hugging Face incident.
 - **Unit 5** is the "what do I actually do" unit. It ties back to my reason for studying this: work I can do now and get hired for.
 
 ## My exercise answers
@@ -108,3 +112,4 @@ _Not yet written._
 ## Sources
 
 [^course]: BlueDot Impact. *AGI Strategy* (course). Accessed 2026-10-17. https://bluedot.org/courses/agi-strategy
+[^lesson-1-1]: BlueDot Impact. *AGI Strategy, Unit 1: What's at stake?* Accessed 2026-10-20. https://bluedot.org/courses/agi-strategy/1/1

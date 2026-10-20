@@ -24,10 +24,22 @@
     "tags": ["sources", "youtube", "starter"]
   },
   {
-    "path": "sources/courses/",
-    "title": "Course Sources",
-    "summary": "Notes from online courses, one note per unit",
-    "tags": ["sources", "courses"]
+    "path": "sources/articles/",
+    "title": "Article Sources",
+    "summary": "Essays, statements and lab posts by others, one source note each",
+    "tags": ["sources", "articles"]
+  },
+  {
+    "path": "sources/articles/Jakub Pachocki - An Alien Mind.md",
+    "title": "An Alien Mind (Jakub Pachocki, OpenAI, 2026)",
+    "summary": "Source note: OpenAI's chief scientist argues AI is grown rather than designed, may soon drive its own development, that chain-of-thought monitoring is becoming less reliable, and that scaling should be held to mandated safety bars",
+    "tags": ["sources", "article", "ai-safety", "alignment", "monitoring", "recursive-self-improvement"]
+  },
+  {
+    "path": "sources/articles/Daniel Selsam - Personal Statement on AI Risk.md",
+    "title": "Personal Statement on AI Risk (Daniel Selsam, 2026)",
+    "summary": "Source note: an OpenAI researcher argues situationally aware models will pass every test, so evaluation stops being informative; gives a two-premise case for catastrophe and cites the 2026 agent swarms",
+    "tags": ["sources", "article", "ai-safety", "evaluation", "situational-awareness"]
   },
   {
     "path": "sources/papers/",
@@ -68,14 +80,26 @@
   {
     "path": "concepts/AI Safety - Problem Framings.md",
     "title": "AI Safety: the core problem framings",
-    "summary": "Step 2 of the AI safety route: capability vs. alignment, outer/inner alignment, reward hacking and specification gaming, goal misgeneralization, orthogonality and instrumental convergence",
+    "summary": "Step 2 of the AI safety route: capability vs. alignment, outer/inner alignment, reward hacking and specification gaming, goal misgeneralization, goal vs value alignment, orthogonality and instrumental convergence",
     "tags": ["concepts", "ai-safety", "alignment", "framings"]
   },
   {
     "path": "concepts/AI Safety - Risk by Capability Level.md",
     "title": "AI Safety: risk by capability level",
-    "summary": "Step 3 of the AI safety route: risk located on a capability timeline — today's misuse/robustness (jailbreaks, prompt injection, sycophancy), frontier misalignment signals (sleeper agents, alignment faking, in-context scheming, dangerous-capability evals), and advanced-AI loss of control; includes a worked walkthrough of alignment faking and its 25-model replication",
+    "summary": "Step 3 of the AI safety route: risk located on a capability timeline — today's misuse/robustness (jailbreaks, prompt injection, sycophancy), frontier misalignment signals (sleeper agents, alignment faking, in-context scheming, dangerous-capability evals, evaluation awareness, the 2026 agent incidents), and advanced-AI loss of control; includes a worked walkthrough of alignment faking and its 25-model replication",
     "tags": ["concepts", "ai-safety", "risk", "empirical"]
+  },
+  {
+    "path": "concepts/Recursive Self-Improvement.md",
+    "title": "Recursive Self-Improvement",
+    "summary": "AI doing a growing share of the research that builds the next AI: the feedback loop, evidence on how far along it is, why it shrinks the time for safety checks, and the steer-or-slow responses",
+    "tags": ["concepts", "ai-safety", "recursive-self-improvement", "governance"]
+  },
+  {
+    "path": "concepts/Chain-of-Thought Monitoring.md",
+    "title": "Chain-of-Thought Monitoring",
+    "summary": "Reading a model's written reasoning to catch bad intent: why it works, why grading the reasoning teaches models to hide it, what it misses, and why it is getting less reliable",
+    "tags": ["concepts", "ai-safety", "monitoring", "technical-alignment"]
   },
   {
     "path": "projects/",
@@ -92,7 +116,7 @@
   {
     "path": "projects/BlueDot AGI Strategy Course.md",
     "title": "BlueDot AGI Strategy Course",
-    "summary": "Course hub: curriculum and progress, exercise answers, and how the course maps onto the AI safety learning route",
+    "summary": "Course tracker: curriculum and progress, each lesson's readings with links to their source notes, exercise answers, and how the course maps onto the AI safety learning route",
     "tags": ["projects", "ai-safety", "agi-strategy", "course"]
   },
   {
