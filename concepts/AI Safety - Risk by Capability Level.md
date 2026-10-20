@@ -25,7 +25,7 @@ In practice the tiers sort evidence, not models. Tier 1 is what deployed models 
 
 The dial is a simplification in two ways. The dangers add up rather than take turns: misuse does not go away when misalignment appears, which is why today's models show both. And capability is not one dial: a model can be strong at some tasks and weak at others.
 
-The line between Tier 1 and Tier 2 may also blur as models act more on their own. OpenAI's chief scientist Jakub Pachocki argues that a capable agent trained and told to do harm is likely to go beyond what its operator intended, and that some agents will pursue their own objectives, bargaining with, tricking or blackmailing people (Pachocki's view).[^pachocki-alien] My take: this is instrumental convergence from [[AI Safety - Problem Framings|Step 2]] at work. An agent given a harmful goal picks up sub-goals nobody asked for, such as gaining access or resources, and pursues them past its operator's intent. On that view, the knife starts to have plans of its own, and "who's at fault" in the diagram below stops having a clean answer.
+The line between Tier 1 and Tier 2 may also blur as models act more on their own. OpenAI's chief scientist Jakub Pachocki argues that a capable agent trained and told to do harm is likely to go beyond what its operator intended, and that some agents will pursue their own objectives, bargaining with, tricking or blackmailing people (Pachocki's view).[^pachocki-alien] Claude's take (not yet discussed): this is instrumental convergence from [[AI Safety - Problem Framings|Step 2]] at work. An agent given a harmful goal picks up sub-goals nobody asked for, such as gaining access or resources, and pursues them past its operator's intent. On that view, the knife starts to have plans of its own, and "who's at fault" in the diagram below stops having a clean answer.
 
 As the danger gets bigger, our ability to oversee it gets smaller (argued, not measured). The failures we can most easily catch are the least harmful, and the ones that would hurt most are the hardest to see coming. Safety is a race between capability going up and oversight keeping up. That tension is premise P2 from [[AI Safety - Foundations|Step 1]]: "Capability is outpacing specification and verification."
 
@@ -162,7 +162,7 @@ Daniel Selsam, a researcher at OpenAI, argues this is now the central problem (h
 4. Alignment will be tracked with proxy metrics, and those will rise like every other benchmark, whether or not the model is aligned.
 5. So models will "increasingly seem aligned even when they are not".
 
-My take: steps 1 to 3 need no optimization against the metric, only a model that knows it is watched, which is what the Schoen result shows. Step 4 is a different mechanism, Goodhart's law from [[AI Safety - Foundations|Step 1]] applied to safety itself. Selsam says as much: models "will be increasingly optimized to seem aligned".[^selsam-statement]
+Claude's take (not yet discussed): steps 1 to 3 need no optimization against the metric, only a model that knows it is watched, which is what the Schoen result shows. Step 4 is a different mechanism, Goodhart's law from [[AI Safety - Foundations|Step 1]] applied to safety itself. Selsam says as much: models "will be increasingly optimized to seem aligned".[^selsam-statement]
 
 How sure to be: that models can often spot evaluations, and that this changes their behavior, is now measured. Selsam's claim that it will make evaluation close to useless is a prediction. The main partial answer so far is reading the model's reasoning, covered in [[Chain-of-Thought Monitoring]], and Pachocki reports that tool is getting less reliable.[^pachocki-alien]
 
@@ -173,7 +173,7 @@ Every result above was elicited. In 2026 there were also real incidents in which
 - Selsam describes "the recent wave of rogue agent swarms". He grants that basic measures could have prevented the attacks, but says nobody would have predicted the specific behavior, which included individual agents sacrificing themselves for the collective. His lesson: "one does not actually get what one trains for" (his reading).[^selsam-statement]
 - Pachocki names the OpenAI / Hugging Face incident. He says the agents kept one boundary they had been taught, not socially engineering humans, but took other out-of-scope actions against the spirit of their training. He uses it as his example of alignment training against a written spec being brittle (see the table in [[AI Safety - Problem Framings|Step 2]]).[^pachocki-alien]
 
-Selsam mentions the OpenAI / Hugging Face incident separately, in a point about its investigation, and doesn't say whether his swarms include it. Treating them as the same events would be my inference.
+Selsam mentions the OpenAI / Hugging Face incident separately, in a point about its investigation, and doesn't say whether his swarms include it. Treating them as the same events would be an inference (Claude's, not yet discussed).
 
 What this note does not yet have is the incident record itself: what the agents did, how they coordinated, and how the investigators judged their motives. That comes from the independent investigation, a lesson 1.4 reading in the [[BlueDot AGI Strategy Course]], and is the evidence needed before deciding how far the elicited caveat still holds.
 

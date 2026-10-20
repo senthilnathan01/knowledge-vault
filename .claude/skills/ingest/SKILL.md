@@ -7,7 +7,7 @@ description: Turn links, files or pasted material into vault notes the way this 
 
 "Ingest" means: the user has read (or wants recorded) the material they attached, and wants it written into the vault now, properly, without being walked through each step. Do every step below unless the user says otherwise. If the user only wants to discuss a source, they will discuss instead of saying "ingest"; then write nothing.
 
-The vault is private. Its concept notes are also the raw material for the public AI safety site in `/Users/tsn/Documents/workspace/research-garden`, so write concept notes that someone other than the user could learn from. Never publish to the garden as part of an ingest.
+The goal is timeless notes: write concept notes that anyone, including the user years from now, could learn from. These are study notes, not publication drafts, so don't frame them around publishing, and never publish anything as part of an ingest.
 
 ## 1. Read every source in full, and record exact metadata
 
@@ -34,15 +34,15 @@ The vault is private. Its concept notes are also the raw material for the public
   | Course page | no source note; course tracker in `projects/` | |
 
 - Name the file by the source's title (`Author - Title.md` for essays), and keep it stable.
-- Report what the source says, in the author's order, with the section heading (or timestamp, or page) for each step. Keep the source's claims apart from interpretation: put the user-facing interpretation under its own heading, marked as interpretation.
-- Quotations: short (a phrase or one sentence), exact, with the section they come from. Never reconstruct a text from many quotes. Notes may be promoted to a public site, so write as if they will be read by others.
+- Report what the source says, in the author's order, with the section heading (or timestamp, or page) for each step. Keep the source's claims apart from interpretation: put interpretation under its own heading starting "Claude's reading", with the line "Claude's reading, written during the ingest and not yet discussed." It is Claude's view until the user discusses and adopts it; then it becomes "My reading".
+- Quotations: short (a phrase or one sentence), exact, with the section they come from. Never reconstruct a text from many quotes. Write as if others will read the note.
 - Set `status: read` (or `synthesized` once its ideas are in concept notes, which this skill does in step 4).
 
 ## 4. Pull durable ideas into concept notes
 
 - A durable idea is one that would help many readers understand AI safety (or the note's field) a year from now: a mechanism, a distinction, an argument, a well-documented case.
 - Skip passing details: course logistics ("this is unit 1"), sign-up prompts, who recommended what, release-note trivia, dated product names unless they are evidence for a claim.
-- For each durable idea: add a section to the best existing concept note, or create an atomic concept note named after the idea (for example `concepts/Recursive Self-Improvement.md`). Atomic notes are the units that later become garden pages.
+- For each durable idea: add a section to the best existing concept note, or create an atomic concept note named after the idea (for example `concepts/Recursive Self-Improvement.md`). Atomic notes are the units that route notes, course notes and thinking notes link to.
 - Keep the AI safety route notes (`concepts/AI Safety - *.md`) as the study path, and link atomic notes from the relevant step.
 
 ## 5. Cite everything that came from a source
@@ -51,7 +51,7 @@ The vault is private. Its concept notes are also the raw material for the public
 - Every factual claim taken from a source gets a footnote (`[^key]`) whose definition sits in `## Sources` at the end: `Author (YYYY, Month DD). *Title*. Publisher. URL`.
 - Use the same footnote key for the same source across notes (for example `[^pachocki-alien]`).
 - When a source reports something it did not witness (an incident, another lab's result), attribute it: "Pachocki says...", not a flat statement.
-- Mark certainty next to each claim: established, debated, the author's view, or the user's own view.
+- Mark certainty next to each claim: established, debated, or the author's view. Any interpretation Claude adds is labelled "Claude's take (not yet discussed):", never "My take:". It becomes the user's take only after they discuss and adopt it.
 
 ## 6. Write in the vault's style
 
@@ -73,13 +73,19 @@ The vault is private. Its concept notes are also the raw material for the public
 ## 9. Commit in small steps, then push
 
 - Typical order: source notes; concept notes; route, tracker and index updates. One coherent change per commit, with a message that says what and why.
-- Push the current branch when done (per `AGENTS.md`). Do not push to the garden, and do not deploy.
+- Push the current branch when done (per `AGENTS.md`). Do not publish or deploy anything.
 
-## 10. Report back
+## 10. Record the questions it raises
+
+- Add the two or three questions most worth discussing to `thinking/Open Questions.md`: the question, where it came from (link the source note), why it matters, and Claude's first take if there is one, marked as Claude's.
+- Add any idea worth acting on to `thinking/Ideas.md` the same way.
+- If a course reading asks a direct question ("which step would you question?"), it goes there too.
+- Thinking matters more to the user than the summary, so don't skip this step.
+
+## 11. Report back
 
 Tell the user, briefly:
 
 - files created and files updated, and why each changed;
-- the two or three ideas most worth discussing, as questions;
-- which concept notes look ready to become garden pages, and what they still need (never publish without being asked);
+- the questions added to `thinking/Open Questions.md`, so the user can pick one to discuss;
 - anything you could not verify.

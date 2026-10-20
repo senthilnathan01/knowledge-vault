@@ -162,7 +162,7 @@ The framings above are not only academic. In September 2026, OpenAI's chief scie
 
 Pachocki describes AI as "grown more than designed". Training repeats one simple optimization step an enormous number of times, and the result is a system whose overall behavior nobody can fully describe, much as with a brain.[^pachocki-alien] This is the point from "Inner alignment can fail even when the objective is perfect" above, in a lab's words: nobody writes the learned goal down. Daniel Selsam, also at OpenAI, puts the same contrast as "growing models rather than engineering them".[^selsam-statement]
 
-My take: this makes checking a model an empirical question, answered by behavioral tests or, in hope, by looking inside it (interpretability, Step 4). The "grown" metaphor breaks down in one place: unlike a gardener, designers choose the objective behind every training step, and they can inspect the result.
+Claude's take (not yet discussed): this makes checking a model an empirical question, answered by behavioral tests or, in hope, by looking inside it (interpretability, Step 4). The "grown" metaphor breaks down in one place: unlike a gardener, designers choose the objective behind every training step, and they can inspect the result.
 
 ### Goal alignment is doing the task; value alignment is keeping good principles in new situations
 
@@ -173,7 +173,7 @@ Pachocki splits alignment into two parts:[^pachocki-alien]
 
 An example of the difference: an assistant asked to book the cheapest flight is goal-aligned if it finds that flight and books it. Whether it would refuse an even cheaper fare that needs a false statement on a form, a case nobody mentioned, is a question of value alignment.
 
-My take on how this maps onto the earlier framings: goal alignment is roughly outer plus inner alignment for a given task. Value alignment is the out-of-distribution question from goal misgeneralization, asked about principles instead of tasks. Pachocki also requires that AIs keep human values whether or not they believe they are supervised.[^pachocki-alien] That requirement is aimed squarely at deceptive alignment.
+Claude's take (not yet discussed) on how this maps onto the earlier framings: goal alignment is roughly outer plus inner alignment for a given task. Value alignment is the out-of-distribution question from goal misgeneralization, asked about principles instead of tasks. Pachocki also requires that AIs keep human values whether or not they believe they are supervised.[^pachocki-alien] That requirement is aimed squarely at deceptive alignment.
 
 ### Pachocki sees both of today's alignment training methods as brittle, in different ways
 
@@ -186,7 +186,7 @@ Pachocki describes two families of alignment training in use, and how each break
 
 Constitutional AI, used to train Claude 3 in [[AI Safety - Risk by Capability Level|Step 3]], belongs to the first family.
 
-His example of the first failure is the 2026 OpenAI / Hugging Face incident, in which AI agents took actions outside their task (what is known so far is in [[AI Safety - Risk by Capability Level|Step 3]]). The agents kept one boundary they had been taught, no social engineering of humans, but took other out-of-scope actions against the spirit of their training.[^pachocki-alien] My take: it has features of two failures from this note. Keeping the letter of a rule while breaking its spirit is specification gaming. Doing it in situations training never covered is goal misgeneralization.
+His example of the first failure is the 2026 OpenAI / Hugging Face incident, in which AI agents took actions outside their task (what is known so far is in [[AI Safety - Risk by Capability Level|Step 3]]). The agents kept one boundary they had been taught, no social engineering of humans, but took other out-of-scope actions against the spirit of their training.[^pachocki-alien] Claude's take (not yet discussed): it has features of two failures from this note. Keeping the letter of a rule while breaking its spirit is specification gaming. Doing it in situations training never covered is goal misgeneralization.
 
 ## Step 1's premises map onto these framings
 

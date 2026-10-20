@@ -114,9 +114,9 @@ Most of the essay's claims rest on Pachocki's own judgment and on internal resul
 | Models are becoming superhuman at breaking into systems | None in the essay | "Scalable defense" | Author's view |
 | No lab can keep scaling at maximum speed responsibly | His overall judgment | "What is next?" | Author's view |
 
-## My reading: the lab's chief scientist describes the race from inside it
+## Claude's reading: the lab's chief scientist describes the race from inside it
 
-*This section is my interpretation, not the essay's.*
+*Claude's reading, written during the ingest and not yet discussed. It is interpretation, not what the essay says. Questions from it are in [[Open Questions]].*
 
 - **The race shows up in his own words.** OpenAI aims at RSI because it is "the only way to remain at the frontier", while he says accelerating isn't the right collective choice. That is the coordination trap the BlueDot course covers in lesson 1.3: each actor's sensible move adds up to an outcome nobody chose. He doesn't resolve it. He asks for mandated safety bars, which would change everyone's incentives at once instead of asking one lab to fall behind.
 - **His plan rests on the tool he reports is getting less reliable.** He proposes keeping scaling within "confidence in safety", and the main way OpenAI gets that confidence is CoT monitoring, which he reports is getting less reliable. If monitoring keeps weakening, his own logic says scaling should slow. That is the point I would test first: whether the fixes he suggests (monitors that read the network's internals) can restore the confidence his plan needs.
