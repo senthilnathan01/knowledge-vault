@@ -27,7 +27,7 @@ The two meet in Step 3's Tier 2, where today's models show early, elicited forms
 
 ## The BlueDot course brings Step 5 forward, ahead of Step 4
 
-Most of BlueDot's AGI Strategy course is Step 5 material (strategy and governance), so taking it from October 2026 means meeting Step 5 before Step 4. Progress is tracked in [[BlueDot AGI Strategy Course]]. My guess: Unit 1's July 2026 OpenAI / Hugging Face incident will update Step 3, and Unit 4.2 may change whether my first Step 4 topic is mechanistic interpretability or AI control and evals.
+Most of BlueDot's AGI Strategy course is Step 5 material (strategy and governance), so taking it from October 2026 means meeting Step 5 before Step 4. Progress is tracked in [[BlueDot AGI Strategy Course]]. My guess: Unit 1's Hugging Face incident (lesson 1.4) will update Step 3, and Unit 4.2 may change whether my first Step 4 topic is mechanistic interpretability or AI control and evals.
 
 ## Each step is discussed first, then written up
 
