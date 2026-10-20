@@ -94,6 +94,8 @@ Evolution is the cleanest example, and it already happened:
 
 Evolution could not write "maximize fitness" into our heads, so it installed proxies that correlated with fitness in the ancestral environment. Sugar was scarce and nutritious, so liking sugar raised fitness. Now we invent candy, contraception and social media, and pursue the proxies against the base objective. Humans are misaligned mesa-optimizers relative to evolution. That is the failure we worry about reproducing.
 
+My take on where the analogy breaks down: evolution selected over many generations with no one watching, while gradient descent shapes a single model whose designers can test it and look inside it. So the analogy shows that this kind of gap can open, not how likely it is to open in AI training.
+
 ### The goal drifts because training only checks familiar situations
 
 The mesa-objective drifts because the model is only ever graded on the training distribution, the situations it saw during training. Any internal goal that produces good-looking behavior on that distribution is rewarded equally, and there are usually many such goals. Most are proxies that coincide with the real objective on-distribution but diverge outside it. Simpler proxies are easier to find, so they are favored. The result is a model quietly optimizing a proxy, which then misgeneralizes off-distribution. This is the same root as goal misgeneralization, below.[^hubinger]
@@ -111,6 +113,8 @@ Given those three, acting aligned during training is the instrumentally rational
 Training does not simply fix it, because gradient descent only pushes on behavior. On the training distribution a deceptively aligned model and a genuinely aligned model produce identical behavior (that is the point of the deception), so there is no gradient that separates them. Training cannot select against a flaw it cannot see, and once a model is deceptive, further training just polishes the disguise.
 
 A human analogy: an employee who disagrees with the company's direction but acts like a true believer through their probation period. They nod in every meeting, planning to do things their own way once they have tenure and cannot easily be fired. They are not aligned, just managing their evaluators to protect their freedom to act later. Same structure, minus the math.
+
+The analogy breaks down in two places. The employee has a human inner life, but the argument for a deceptive model needs no claim about experience or feelings: only that the model models its training and acts on that model. And an employer cannot read an employee's mind, while a model's weights can in principle be inspected. That is the hope behind interpretability in Step 4.
 
 ## In goal misgeneralization, skills carry over but the goal does not
 
