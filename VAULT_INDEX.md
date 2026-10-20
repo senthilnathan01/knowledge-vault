@@ -41,9 +41,11 @@
 - `templates/Paper Note.md` — structured paper reading note
 - `templates/Synthesis Note.md` — multi-source synthesis
 - `templates/Publication Draft.md` — private staging note for public promotion
+- `templates/Source Note.md` — source note for essays, statements, posts, videos and podcasts
 - `templates/Note Style Guide.md` — how to write notes: consumable writing for a newcomer, linking notes into a map, certainty marking, footnote citations, and diagrams
 
 ## Workflow
+- `.claude/skills/ingest/SKILL.md` — what "ingest" means: the full source-to-notes workflow
 - `.claude/skills/consumable-writing/SKILL.md` — the consumable-writing skill the note style guide is built on
 - `scripts/check_note_style.py` — checks notes against the style guide's mechanical rules; run by the git pre-commit hook (`.githooks/pre-commit`) and a Claude Code hook (`.claude/settings.json`)
 - `.claude/agents/note-reviewer.md` — reviewer agent that runs the style guide's final check on a note before it is committed

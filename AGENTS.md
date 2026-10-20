@@ -18,7 +18,8 @@ This repository is an Obsidian knowledge vault made of Markdown files.
 - Downloaded paper PDFs -> `sources/papers/_pdf/` (local-only and Git-ignored)
 - Published blog articles used as private source material -> `sources/blogs/`
 - YouTube or podcast source notes -> `sources/youtube/`
-- Online course notes, one note per unit -> `sources/courses/` (course hub and progress -> `projects/`)
+- Essays, statements, lab posts and other articles by someone else -> `sources/articles/`
+- Online courses -> a course tracker in `projects/` (progress, readings, exercise prompts); each reading gets its own source note, and course pages that are only wrappers get none
 - Evergreen ideas and distilled knowledge -> `concepts/`
 - Active plans, product ideas, and execution docs -> `projects/`
 - Reusable Obsidian note templates -> `templates/`
@@ -46,9 +47,12 @@ This repository is an Obsidian knowledge vault made of Markdown files.
 - Add the public article to `published_in` on directly related paper or synthesis notes when useful.
 - After validating requested changes, commit and push them automatically unless the user explicitly says not to. Deployment still requires an explicit request.
 
+## When the user says "ingest"
+Follow `.claude/skills/ingest/SKILL.md`: verified source notes, durable ideas pulled into concept notes, a citation for every sourced claim, links, index and manifest updates, style checks and the note-reviewer, small commits, push, and a short report.
+
 ## For YouTube links
-When given a YouTube link:
-1. Create a detailed source note in `sources/youtube/`
+When given a YouTube link (this is the ingest workflow applied to a video):
+1. Create a detailed source note in `sources/youtube/`, citing timestamps for claims
 2. Extract the main ideas, nuanced insights, and actionable points
 3. Update any relevant existing notes in `concepts/` or `projects/`
 4. Add links between the source note and related notes

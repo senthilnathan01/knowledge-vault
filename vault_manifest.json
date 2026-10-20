@@ -138,10 +138,22 @@
     "tags": ["templates", "publishing"]
   },
   {
+    "path": "templates/Source Note.md",
+    "title": "Source Note Template",
+    "summary": "Template for a source note on an essay, statement, post, video or podcast: exact metadata, the argument in the author's order, evidence table, interpretation kept separate, links and footnotes",
+    "tags": ["templates", "sources"]
+  },
+  {
     "path": "templates/Note Style Guide.md",
     "title": "Note Style Guide",
     "summary": "How to write vault notes: the consumable-writing skill applied to the vault (newcomer reader, one idea at a time, point-first headings, certainty marking), plus linking notes into a map, footnote citations, and Mermaid diagrams",
     "tags": ["templates", "reference", "writing"]
+  },
+  {
+    "path": ".claude/skills/ingest/SKILL.md",
+    "title": "Ingest skill",
+    "summary": "What 'ingest' means in this vault: verify sources, write source notes, pull durable ideas into concept notes, cite every sourced claim, link, update index and manifest, style-check, commit in steps, push, report",
+    "tags": ["skill", "workflow", "sources"]
   },
   {
     "path": ".claude/skills/consumable-writing/SKILL.md",
