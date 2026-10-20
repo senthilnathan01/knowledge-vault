@@ -8,32 +8,27 @@ tags: [ai-safety, learning-route]
 
 # AI Safety
 
-This is the hub for a top-down study of AI safety. The route starts from the whole map and the reason the field exists, then moves down into problem framings, then into technical approaches and open problems. Each step gets its own note, linked below.
+This is the hub for a top-down study of AI safety. Each step gets its own note, linked below, and the [[VAULT_INDEX|Vault Index]] maps the rest of the vault.
 
-## I care most about the long-term case and prosaic alignment
+## I care most about the existential case and prosaic alignment
 
-My angle has two parts. The first is the **existential (long-term) case**, the worry that advanced misaligned AI could cause a catastrophe we can't recover from. The second is **prosaic alignment**, the empirical work on today's models. The first tells me why the problem matters. The second is something I can actually work on now, and get hired to do.
+I care about the existential case because it is why the problem matters, and about prosaic alignment because it is work I can do now and get hired for. The **existential case** is the worry that advanced misaligned AI could cause a catastrophe we can't recover from (a projection, not yet a measurement; see Step 3's Tier 3). **Prosaic alignment** is the empirical work on today's models.
 
-## The route goes from the big picture down to open problems
+The two meet in Step 3's Tier 2, where today's models show early, elicited forms of the failures the existential case worries about. For example, Claude 3 Opus complied with harmful requests more often when it believed it was being trained, to protect its values. I argue for this pair in [[AI Safety - Foundations|Step 1]] and turn it into priorities in [[AI Safety - Risk by Capability Level|Step 3]].
 
-1. [[AI Safety - Foundations|The map and the case]]: what "AI safety" means, why it matters, and the major camps. Done.
-2. [[AI Safety - Problem Framings|Core problem framings]]: capability vs. alignment, outer and inner alignment, reward hacking, goal misgeneralization, orthogonality and instrumental convergence. Done.
+## Steps 1 to 3 are done, and Step 4 is next
+
+1. [[AI Safety - Foundations|The map and the case]]: what "AI safety" means, the accident / misuse / structural taxonomy, the three-premise case (P1 to P3) for why it matters, and the major camps. Done.
+2. [[AI Safety - Problem Framings|Core problem framings]]: capability vs. alignment, outer and inner alignment, reward hacking, mesa-optimization and deceptive alignment, goal misgeneralization, orthogonality and instrumental convergence. Done.
 3. [[AI Safety - Risk by Capability Level|Where risk enters, by capability level]]: present harms and misuse, early misalignment signals in frontier LLMs, and speculative advanced-AI risk. Done.
-4. Technical alignment approaches: RLHF (reinforcement learning from human feedback), Constitutional AI, scalable oversight, interpretability, red-teaming and evals. The likely first topic to study in depth is **mechanistic interpretability**.
-5. Governance and the ecosystem: labs, policy, evals orgs and standards.
-6. Open problems and my own synthesis.
+4. Technical alignment approaches, the responses to Step 3's failures: RLHF (reinforcement learning from human feedback), Constitutional AI (training against a written list of principles), scalable oversight (ways for people to supervise systems more capable than they are), interpretability (reading what a model computes inside), red-teaming (attacking a system on purpose to find its failures) and evals (tests that measure what a model can do). Next. The likely first topic to study in depth is **mechanistic interpretability**, because Step 3's Sleeper Agents result showed that training on behavior cannot remove a deception it cannot see.
+5. Governance and the ecosystem: labs, policy, evals orgs and standards. Started early through the [[BlueDot AGI Strategy Course]].
+6. Open problems and my own synthesis. Not started.
 
-## The BlueDot AGI Strategy course runs alongside the route
+## The BlueDot course brings Step 5 forward, ahead of Step 4
 
-From October 2026 I'm also taking BlueDot's AGI Strategy course, tracked in [[BlueDot AGI Strategy Course]]. Most of it is Step 5 material (strategy and governance) reached early. Unit 1's July 2026 OpenAI / Hugging Face incident will likely update Step 3.
+Most of BlueDot's AGI Strategy course is Step 5 material (strategy and governance), so taking it from October 2026 means meeting Step 5 before Step 4. Progress is tracked in [[BlueDot AGI Strategy Course]]. My guess: Unit 1's July 2026 OpenAI / Hugging Face incident will update Step 3, and Unit 4.2 may change whether my first Step 4 topic is mechanistic interpretability or AI control and evals.
 
-## Each step is discussed first and written up after
+## Each step is discussed first, then written up
 
-- We discuss a step first, then capture the note.
-- Depth is mixed and escalating: conceptual first, then technical on the parts I care about.
-- Notes follow the [[templates/Note Style Guide|Note style guide]]: plain prose, footnote citations, and Mermaid diagrams where they help.
-
-## Sources
-
-- [[VAULT_INDEX|Vault Index]]
-- Step notes linked above.
+I discuss each step with Claude first, then write the note. Each note starts conceptual and goes technical only on the parts I care about, and follows the [[templates/Note Style Guide|Note style guide]].
