@@ -7,7 +7,6 @@
 ## Sources / YouTube
 - `sources/youtube/` — detailed notes from YouTube videos and podcasts
 - `sources/youtube/YouTube Sources.md` — YouTube source guide for capture and follow-up
-- `sources/youtube/What It's Like to Work at a $1.4 Trillion Sovereign Wealth Fund.md` — source analysis on permanent capital, institutional memory, mandate design, and leadership at scale
 
 ## Sources / Courses
 - `sources/courses/` — notes from online courses, one note per unit, written after reading and discussion
