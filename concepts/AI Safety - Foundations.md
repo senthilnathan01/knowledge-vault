@@ -11,22 +11,24 @@ tags: [ai-safety, foundations]
 
 Step 1 of the [[AI Safety]] route. The goal here is orientation, not depth: name the sub-fields so later steps have somewhere to live, state the core argument for why the field exists, and sketch the camps I'll keep running into.
 
-## What "AI safety" actually refers to
+## "AI safety" is four different problems under one name
 
-It is an umbrella term, and most of the confusion around it comes from people using it for four different things at once. Splitting them apart helps.
+"AI safety" is an umbrella term, and most of the confusion around it comes from people using it for four different things at once. Splitting them apart helps.
 
-- **Alignment.** Getting a system to pursue what its designers or users actually intend, rather than a proxy that only looks right. This is the technical core.[^ngo]
-- **Robustness.** The system keeps behaving well under distribution shift, adversarial pressure, and strange inputs: jailbreaks, prompt injection, edge cases.[^hendrycks]
-- **Misuse and security.** A capable system aimed at harm by a person who wants that harm, or a system whose weights and capabilities get stolen and abused (bio, cyber, disinformation).[^zwetsloot]
-- **Governance.** The incentives, institutions, and race dynamics around the technology, separate from how any single model behaves.[^zwetsloot]
+- **Alignment:** getting a system to pursue what its designers or users actually intend, rather than a proxy (a stand-in measure) that only looks right. This is the technical core.[^ngo]
+- **Robustness:** the system keeps behaving well under distribution shift (inputs unlike the ones it was trained on), adversarial pressure, and strange inputs such as jailbreaks (inputs that get a model past its safety training), prompt injection (instructions hidden in data the model reads) and edge cases.[^hendrycks]
+- **Misuse and security:** a capable system aimed at harm by a person who wants that harm, or a system whose weights (its learned parameters) and capabilities get stolen and abused (bio, cyber, disinformation).[^zwetsloot]
+- **Governance:** the incentives, institutions and race dynamics around the technology, separate from how any single model behaves.[^zwetsloot]
 
-A cleaner way to sort the same territory is the **accident / misuse / structural** taxonomy. It maps the four clusters onto *how* the harm arises:
+## Sorting by how harm arises gives three kinds of risk
+
+A cleaner way to sort the same territory is the accident / misuse / structural taxonomy. It maps the four problems onto how the harm arises:
 
 - **Accident risk:** the system does something harmful that nobody wanted (alignment and robustness failures).[^concrete]
 - **Misuse risk:** a person deliberately points a working system at something harmful.[^zwetsloot]
-- **Structural risk:** no single bad actor and no bug. Harm emerges from competition, deployment pressure, and how the technology reshapes power and incentives.[^zwetsloot]
+- **Structural risk:** there is no single bad actor and no bug. Harm emerges from competition, deployment pressure, and how the technology reshapes power and incentives.[^zwetsloot]
 
-This taxonomy is worth keeping. Most arguments you overhear in AI safety are really disagreements about which of these three boxes dominates.
+My take: this taxonomy is worth keeping, because most arguments you overhear in AI safety are really disagreements about which of these three boxes dominates. [[AI Safety - Risk by Capability Level|Step 3]] comes back to it when sorting real failures by capability level.
 
 ```mermaid
 flowchart TD
@@ -42,15 +44,15 @@ flowchart TD
     G --> STR["Structural risk<br/>(emergent, no bad actor)"]
 ```
 
-## The core case, stripped to its skeleton
+## Three premises make the case, with no science fiction needed
 
-You do not need any sci-fi framing to state why the field exists. Three premises do the work:
+The field exists because we can build systems more capable than we can reliably specify, verify or control. Three premises carry that argument:
 
-- **P1. Objectives are hard to specify.** We train systems on proxies: a reward signal, human approval, next-token likelihood. None of those is the thing we actually want, and proxy and goal come apart under optimization. This is Goodhart's law: "when a measure becomes a target, it ceases to be a good measure."[^strathern]
-- **P2. Capability is outpacing specification and verification.** Systems keep getting more general and get deployed into open-ended, high-stakes settings faster than we can audit them.[^hendrycks]
+- **P1. Objectives are hard to specify.** We train systems on proxies: a reward signal, human approval, next-token likelihood (how well the model predicts the next word of its training text). None of those is the thing we actually want, and proxy and goal come apart under optimization. This is Goodhart's law: "when a measure becomes a target, it ceases to be a good measure."[^strathern]
+- **P2. Capability is outpacing specification and verification.** Systems keep getting more general, and they get deployed into open-ended, high-stakes settings faster than we can audit them.[^hendrycks]
 - **P3. Some failures do not stay contained or give a second chance.** A capable system optimizing a subtly wrong objective, at scale, can cause harm that is hard to catch early and hard to reverse late.[^ngo]
 
-P1 to P3 already bite today. Reward hacking, specification gaming, and jailbreaks are P1 and P2 showing up in current models, not hypotheticals.[^concrete] The long-term worry is what happens to P3 as capability climbs.[^bostrom]
+P1 to P3 already bite today. Reward hacking, specification gaming (a system scoring well on its measure without doing what was meant) and jailbreaks are P1 and P2 showing up in current models, not hypotheticals.[^concrete] [[AI Safety - Problem Framings|Step 2]] works through real cases. The long-term worry is what happens to P3 as capability climbs.[^bostrom]
 
 ```mermaid
 flowchart LR
@@ -60,26 +62,28 @@ flowchart LR
     C["The field exists because we can build<br/>systems more capable than we can<br/>reliably specify, verify, or control"]
 ```
 
-## The camps I'll keep meeting
+## The camps are different bets, not enemies
 
-These are less enemies than different bets on which risk is most neglected and most tractable.
+The camps I'll keep meeting differ mainly in which risk they think is most neglected and most tractable.
 
 | Camp | Core worry | Emphasis |
 | --- | --- | --- |
 | Existential / x-risk | Advanced misaligned AI as a catastrophic, maybe unrecoverable threat | Alignment theory, "get it right the first time"[^bostrom] |
-| Prosaic alignment | Same long-term worry, but tractable through empirical work on today's models | RLHF, interpretability, scalable oversight, evals[^ngo] |
+| Prosaic alignment | Same long-term worry, but tractable through empirical work on today's models | RLHF (reinforcement learning from human feedback), interpretability, scalable oversight, evals[^ngo] |
 | Ethics / present harms | Real harms now: bias, surveillance, labor, concentration of power | Accountability, auditing, deployment norms |
 | Governance / policy | Race dynamics and misuse; coordination failure | Regulation, compute governance, standards, evals-as-policy[^zwetsloot] |
 
-The recurring tension across all of them: present harms versus speculative catastrophe, and whether attention paid to one starves the other.
+The tension that runs across all of them is present harms versus speculative catastrophe, and whether attention paid to one starves the other.
 
-## Where I sit
+## I sit in the existential and prosaic camps
 
-My two bets are the top two rows. The existential case is why I think the problem is worth a career. Prosaic alignment is where that conviction turns into work I can do this year on real models, which is also where the jobs are. Russell's framing is a useful bridge between the two: build systems that are uncertain about the objective and defer to humans, rather than systems that optimize a fixed goal we had to guess at.[^russell] Steps 2 to 4 are where I'll test whether that framing holds up.
+My two bets are the top two rows. The existential case is why I think the problem is worth a career. Prosaic alignment is where that conviction turns into work I can do this year on real models, which is also where the jobs are.
 
-## What's next
+Russell's framing is a useful bridge between the two: build systems that are uncertain about the objective and defer to humans, rather than systems that optimize a fixed goal we had to guess at.[^russell] Steps 2 to 4 are where I'll test whether that framing holds up.
 
-Step 2: the core problem framings in detail. Specification gaming and reward hacking with real examples, instrumental convergence, and the alignment-vs-capability distinction that the whole field pivots on.
+## Step 2 names the core problems in detail
+
+[[AI Safety - Problem Framings|Step 2]] covers the core problem framings: specification gaming and reward hacking with real examples, instrumental convergence, and the alignment-vs-capability distinction that the whole field turns on.
 
 ## Sources
 
