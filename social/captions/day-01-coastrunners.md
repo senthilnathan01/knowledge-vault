@@ -2,7 +2,7 @@
 
 **Card:** `social/cards/day-01-coastrunners.html` (render at 1080×1350)
 **Source note:** `concepts/AI Safety - Problem Framings.md`
-**Primary source:** Clark & Amodei, *Faulty Reward Functions in the Wild*, OpenAI (2016)
+**Primary source:** Clark & Amodei, *Faulty Reward Functions in the Wild*, OpenAI (2016). https://openai.com/index/faulty-reward-functions/
 
 ---
 

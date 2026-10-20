@@ -2,7 +2,7 @@
 
 **Card:** `social/cards/example-goal-misgeneralization.html` (render 1080×1350)
 **Source note:** `concepts/AI Safety - Problem Framings.md`
-**Sources:** Langosco et al. (2022), *Goal Misgeneralization in Deep RL*; Shah et al. (2022)
+**Sources:** Langosco et al. (2022), *Goal Misgeneralization in Deep Reinforcement Learning*, https://arxiv.org/abs/2105.14111; Shah et al. (2022), *Goal Misgeneralization: Why Correct Specifications Aren't Enough For Correct Goals*, https://arxiv.org/abs/2210.01790
 
 ---
 
