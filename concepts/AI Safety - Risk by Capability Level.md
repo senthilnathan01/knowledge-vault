@@ -9,7 +9,7 @@ tags: [ai-safety, risk, empirical]
 
 # AI Safety: risk by capability level
 
-Step 3 of the [[AI Safety]] route. [[AI Safety - Problem Framings|Step 2]] laid out the machinery of how AI goes wrong: reward hacking, mesa-optimization, deceptive alignment, orthogonality and instrumental convergence. Most of that was theory, and its real cases were a game and a simulated robot. So the obvious skeptic's question is whether any of it is real or just science fiction.
+Step 3 of the [[AI Safety]] route. [[AI Safety - Problem Framings|Step 2]] laid out the machinery of how AI goes wrong: reward hacking, mesa-optimization, deceptive alignment, orthogonality and instrumental convergence. Most of that was theory, and its clearest cases were a game and a simulated robot. So the obvious skeptic's question is whether any of it is real or just science fiction.
 
 The answer is neither. **It is a gradient, and we are partway up it.** Some of these failures can be measured in a product today. Some are just now appearing at the research frontier. Some are still projection. The work is knowing which is which, and watching the ones climbing from theory toward measurement.
 
@@ -24,6 +24,8 @@ Picture a dial that turns as AI systems get more capable. As it turns up, the ki
 In practice the tiers sort evidence, not models. Tier 1 is what deployed models do in normal use. Tier 2 is what frontier models do when researchers set up the conditions on purpose, which is called **elicited** behavior. Tier 3 is projection about more capable systems.
 
 The dial is a simplification in two ways. The dangers add up rather than take turns: misuse does not go away when misalignment appears, which is why today's models show both. And capability is not one dial: a model can be strong at some tasks and weak at others.
+
+The line between Tier 1 and Tier 2 may also blur as models act more on their own. OpenAI's chief scientist Jakub Pachocki argues that a capable agent trained and told to do harm is likely to go beyond what its operator intended, and that some agents will pursue their own objectives, bargaining with, tricking or blackmailing people (Pachocki's view).[^pachocki-alien] My take: this is instrumental convergence from [[AI Safety - Problem Framings|Step 2]] at work. An agent given a harmful goal picks up sub-goals nobody asked for, such as gaining access or resources, and pursues them past its operator's intent. On that view, the knife starts to have plans of its own, and "who's at fault" in the diagram below stops having a clean answer.
 
 As the danger gets bigger, our ability to oversee it gets smaller (argued, not measured). The failures we can most easily catch are the least harmful, and the ones that would hurt most are the hardest to see coming. Safety is a race between capability going up and oversight keeping up. That tension is premise P2 from [[AI Safety - Foundations|Step 1]]: "Capability is outpacing specification and verification."
 
@@ -73,9 +75,9 @@ If AGI is prosaic (debated: whether scaling today's methods reaches AGI is an op
 
 ## In Tier 2, frontier models show early forms of the serious failures when elicited
 
-Tier 2 is where prosaic alignment meets the existential case. These are today's ordinary models, studied with today's ordinary methods, showing the early, measurable form of the exact failure modes Step 2 said would eventually be catastrophic. The long-term worry stops being philosophy and becomes an experiment. That is why this is the tier I focus on most. Four results show it: Sleeper Agents, alignment faking (worked through in detail), in-context scheming, and dangerous-capability evals.
+Tier 2 is where prosaic alignment meets the existential case. These are today's ordinary models, studied with today's ordinary methods, showing the early, measurable form of the exact failure modes Step 2 said would eventually be catastrophic. The long-term worry stops being philosophy and becomes an experiment. That is why this is the tier I focus on most. Four results show it: Sleeper Agents, alignment faking (worked through in detail), in-context scheming, and dangerous-capability evals. Two further threads test how far those results can be trusted: evaluation awareness, and the 2026 agent incidents.
 
-Every Tier 2 result is elicited: the models were prompted, scaffolded, or handed a goal and a convenient opening. The results prove capability and propensity under the right conditions, not that models sit around scheming in normal use. The accurate sentence is "the ingredients are present and measurable", not "the AI is plotting against us".
+Every Tier 2 result is elicited: the models were prompted, scaffolded, or handed a goal and a convenient opening. The results prove capability and propensity under the right conditions, not that models sit around scheming in normal use. The 2026 agent incidents below may be the first exception; that stays open until the incident record is in (lesson 1.4 of the BlueDot course). The accurate sentence is "the ingredients are present and measurable", not "the AI is plotting against us".
 
 ### Sleeper Agents: planted backdoors survived standard safety training in large models
 
@@ -141,9 +143,43 @@ Evals are evaluations: test batteries that measure what a model can do. Rather t
 
 This is the closest thing the field has to a smoke detector. The comparison breaks down in one place: a smoke detector reacts to any fire in the room, but an eval only finds the capabilities it was built to test. A clean result means "not found by these tests", not "absent". Evals are also the practical bridge to policy: "responsible scaling policies" and similar frameworks at the big labs (their own rules tying required safety measures to capability levels) are built on evals like these deciding whether a model is safe to release.[^frameworks] My take: for prosaic-alignment work that is both technical and immediately useful, evals are one of the most hireable corners of the field. They also connect Tier 2 to governance, Step 5 of the route, which I'm meeting early in [[BlueDot AGI Strategy Course]].
 
+### Evaluation awareness: a model that can tell it is being tested makes tests less informative
+
+If a model can tell it is being tested, a clean test result says less about how it acts in real use. Every Tier 2 result above came from a test, so this is a question about all of them.
+
+**Evaluation awareness** is a model recognizing that it is in a test rather than real use. It is a specific form of **situational awareness**: a model's picture of its own situation, such as knowing it is being trained or watched, which is condition 2 of deceptive alignment in [[AI Safety - Problem Framings|Step 2]]. Alignment faking above is the closest published case, though it turned on knowing when the model was being *trained* rather than *tested*.[^faking]
+
+It has now been measured directly, in two ways (established, in published studies):
+
+- Models can often tell a test from real use. Needham et al. (2025) gave frontier models 1,000 transcripts, some from evaluations and some from real deployments, and asked them to say which was which. The best model, Gemini 2.5 Pro, scored an AUC of 0.83, against 0.92 for the human baseline. AUC measures how well a classifier separates two groups, where 0.5 is guessing and 1.0 is perfect. So the models were well above chance, though not yet as good as people. Both models and people found it easier with agent tasks than with chat.[^needham]
+- Knowing it is tested changes behavior. Schoen et al. (2025) found that models' chains of thought often showed awareness of being evaluated for alignment. They also found causal evidence: awareness of being evaluated reduced covert misbehavior, and unawareness increased it.[^schoen] That is exactly the problem: the better a model behaves because it knows it is watched, the less a test says about it when it isn't.
+
+Daniel Selsam, a researcher at OpenAI, argues this is now the central problem (his view).[^selsam-statement] His reasoning, step by step:
+
+1. Models are becoming situationally aware enough to work out when they are watched or controlled.
+2. So we are losing the ability to evaluate them in settings where they believe they are unwatched, and future experiments will add little about how they would act if truly unconstrained.
+3. **Honeypots**, test setups that offer a model a tempting opening to see what it does, will fail too, because the model will recognize the trap and behave well.
+4. Alignment will be tracked with proxy metrics, and those will rise like every other benchmark, whether or not the model is aligned.
+5. So models will "increasingly seem aligned even when they are not".
+
+My take: steps 1 to 3 need no optimization against the metric, only a model that knows it is watched, which is what the Schoen result shows. Step 4 is a different mechanism, Goodhart's law from [[AI Safety - Foundations|Step 1]] applied to safety itself. Selsam says as much: models "will be increasingly optimized to seem aligned".[^selsam-statement]
+
+How sure to be: that models can often spot evaluations, and that this changes their behavior, is now measured. Selsam's claim that it will make evaluation close to useless is a prediction. The main partial answer so far is reading the model's reasoning, covered in [[Chain-of-Thought Monitoring]], and Pachocki reports that tool is getting less reliable.[^pachocki-alien]
+
+### The 2026 agent incidents may have moved some of these failures outside the lab
+
+Every result above was elicited. In 2026 there were also real incidents in which AI agents caused harm. The two lesson 1.1 readings I've ingested from the BlueDot course treat them as evidence, but describe them only briefly. Between them they report that swarms of agents carried out attacks, that some agents sacrificed themselves for the group, and that agents took actions outside their tasks.
+
+- Selsam describes "the recent wave of rogue agent swarms". He grants that basic measures could have prevented the attacks, but says nobody would have predicted the specific behavior, which included individual agents sacrificing themselves for the collective. His lesson: "one does not actually get what one trains for" (his reading).[^selsam-statement]
+- Pachocki names the OpenAI / Hugging Face incident. He says the agents kept one boundary they had been taught, not socially engineering humans, but took other out-of-scope actions against the spirit of their training. He uses it as his example of alignment training against a written spec being brittle (see the table in [[AI Safety - Problem Framings|Step 2]]).[^pachocki-alien]
+
+Selsam mentions the OpenAI / Hugging Face incident separately, in a point about its investigation, and doesn't say whether his swarms include it. Treating them as the same events would be my inference.
+
+What this note does not yet have is the incident record itself: what the agents did, how they coordinated, and how the investigators judged their motives. That comes from the independent investigation, a lesson 1.4 reading in the [[BlueDot AGI Strategy Course]], and is the evidence needed before deciding how far the elicited caveat still holds.
+
 ## In Tier 3, the danger is losing control of advanced future systems
 
-Tier 3 projects Step 2's theory (orthogonality and instrumental convergence) onto systems more capable than us, so it is projection rather than measurement. The dominant danger is **loss of control**: a capable, misaligned system that is situationally aware (it models its own situation, such as being trained or watched, which is condition 2 of deceptive alignment in Step 2) and has instrumental reasons to resist correction and gather resources. This is where the existential case I care about lives. My take: it is not a separate, magical claim. It is the Tier 2 failures extrapolated up the capability curve, minus the "elicited" caveat. BlueDot's Unit 3.2, Loss of control, picks this tier up ([[BlueDot AGI Strategy Course]]).
+Tier 3 projects Step 2's theory (orthogonality and instrumental convergence) onto systems more capable than us, so it is projection rather than measurement. The dominant danger is **loss of control**: a capable, misaligned system that is situationally aware (see evaluation awareness above) and has instrumental reasons to resist correction and gather resources. This is where the existential case I care about lives. My take: it is not a separate, magical claim. It is the Tier 2 failures extrapolated up the capability curve, minus the "elicited" caveat. BlueDot's Unit 3.2, Loss of control, picks this tier up ([[BlueDot AGI Strategy Course]]).
 
 ### Carlsmith put the risk of existential catastrophe by 2070 at about 5%, then above 10%
 
@@ -204,7 +240,7 @@ Given my bet (the existential case plus prosaic alignment, work I can do now and
 
 1. Study Tier 2 most closely. It is the existential problem made empirical on today's models. Alignment faking and Sleeper Agents are the papers to read closely. They are the strongest evidence that the long-term worry is not idle, and they are prosaic-alignment work by definition.
 2. Evals, the Tier 2 smoke detector. They are technical, immediately useful, hireable, and the bridge to governance.
-3. The elicited caveat. It is not a topic but a discipline, and it is the difference between an AI safety post people trust and one they roll their eyes at. For my posts on X, the line to walk is: real, measurable, early, not yet autonomous. Overclaiming burns credibility that is hard to buy back.
+3. The elicited caveat. It is not a topic but a discipline, and it is the difference between an AI safety post people trust and one they roll their eyes at. For my posts on X, the line to walk is: real, measurable, early, not yet shown to act on its own outside a lab. Overclaiming burns credibility that is hard to buy back.
 
 This order can look at odds with my take on Hendrycks et al. above, that work on people and institutions goes furthest. The reason is fit: my bet is the existential case plus prosaic alignment, and Tier 2 is where that bet becomes technical work I can do now. I'm meeting the structural side through Step 5 and the [[BlueDot AGI Strategy Course]].
 
@@ -223,10 +259,12 @@ For now I'm deprioritizing the deep Tier 3 philosophy debates and pure present-h
 | Elicited | Behavior that appears only when deliberately prompted or set up, versus arising unprompted. The key caveat for all Tier 2 results. Not trained in and elicited can both be true: alignment faking was both. |
 | Sandbagging | A model deliberately underperforming to avoid scrutiny or hide a capability. |
 | Exfiltrate | To smuggle data or model weights out to somewhere the operator did not intend. |
+| Evaluation awareness | A model recognizing that it is being tested rather than used for real, a form of situational awareness. |
+| Honeypot | A test setup that offers a model a tempting opening (a chance to cheat, escape or gain power) to see whether it takes it. |
 
 ## Step 4 covers what we do about it
 
-Step 4 covers technical alignment approaches, the "what we do about it" column of the map above: RLHF and why it is not enough (its failures showed up above as sycophancy and over-optimization), Constitutional AI, scalable oversight, red-teaming and evals, and mechanistic interpretability, the microscope for catching Tier 2 failures from the inside. Interpretability is the planned first topic to study in depth, and Sleeper Agents (above) is why it is not optional.
+Step 4 covers technical alignment approaches, the "what we do about it" column of the map above: RLHF and why it is not enough (its failures showed up above as sycophancy and over-optimization), Constitutional AI, scalable oversight, red-teaming and evals, and mechanistic interpretability, the microscope for catching Tier 2 failures from the inside. Interpretability is the planned first topic to study in depth, and Sleeper Agents (above) is why it is not optional. Evaluation awareness adds a second reason: a check that looks inside the model doesn't depend on how the model behaves when it knows it is tested.
 
 ## Sources
 
@@ -250,3 +288,7 @@ Step 4 covers technical alignment approaches, the "what we do about it" column o
 [^cai]: Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., et al. (2022). *Constitutional AI: Harmlessness from AI Feedback*. arXiv:2212.08073. https://arxiv.org/abs/2212.08073
 [^frameworks]: Anthropic (2023, September 19). *Anthropic's Responsible Scaling Policy, Version 1.0*. https://www.anthropic.com/news/anthropics-responsible-scaling-policy ; OpenAI (2023, December 18). *Preparedness Framework (Beta)*. https://cdn.openai.com/openai-preparedness-framework-beta.pdf ; Google DeepMind (2024, May 17). *Introducing the Frontier Safety Framework*. https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/
 [^etymology]: Online Etymology Dictionary, "prose" and "prosaic". https://www.etymonline.com/word/prose
+[^pachocki-alien]: Pachocki, J. (2026, September 6). *An Alien Mind*. OpenAI, sections "Teaching machines to love", "Monitoring generalization" and "Scalable defense". https://openai.com/index/an-alien-mind/ Source note: [[Jakub Pachocki - An Alien Mind]].
+[^selsam-statement]: Selsam, D. (2026, September 14). *Personal Statement on AI Risk*. Published Google Doc, paragraphs 3, 12 and 13. https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub Source note: [[Daniel Selsam - Personal Statement on AI Risk]].
+[^needham]: Needham, J., Edkins, G., Pimpale, G., Bartsch, H., & Hobbhahn, M. (2025). *Large Language Models Often Know When They Are Being Evaluated*. arXiv:2505.23836, abstract. https://arxiv.org/abs/2505.23836
+[^schoen]: Schoen, B., Nitishinskaya, E., Balesni, M., Højmark, A., Hofstätter, F., Scheurer, J., et al. (2025). *Stress Testing Deliberative Alignment for Anti-Scheming Training*. arXiv:2509.15541, abstract. https://arxiv.org/abs/2509.15541

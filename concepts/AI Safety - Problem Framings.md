@@ -9,7 +9,7 @@ tags: [ai-safety, alignment, framings]
 
 # AI Safety: the core problem framings
 
-Step 2 of the [[AI Safety]] route, building on [[AI Safety - Foundations|the map and the case]]. Step 1 said *why* the field exists. This note gives the vocabulary the field actually argues in: the distinction it turns on, the two nested places alignment can fail, the inner failure that has been shown in trained agents (goal misgeneralization), and the two theses that explain why a capable misaligned system is dangerous.
+Step 2 of the [[AI Safety]] route, building on [[AI Safety - Foundations|the map and the case]]. Step 1 said *why* the field exists. This note gives the vocabulary the field actually argues in: the distinction it turns on, the two nested places alignment can fail, the inner failure that has been shown in trained agents (goal misgeneralization), and the two theses that explain why a capable misaligned system is dangerous, plus how a frontier lab now frames the whole problem as generalization.
 
 ## A system can be capable and still aimed at the wrong goal
 
@@ -154,6 +154,40 @@ My take: the human correlation is real (my impression, not a measured result), b
 
 The human correlation is also looser than the intuition assumes, even on its own terms. Plenty of highly intelligent people have turned that intelligence toward cruelty or narrow self-interest rather than away from it. In those cases the intelligence amplified an existing aim instead of revising it. That is consistent with the orthogonality thesis, not with the "smarter implies wiser" intuition.
 
+## A frontier lab's chief scientist calls generalization the core alignment problem
+
+The framings above are not only academic. In September 2026, OpenAI's chief scientist Jakub Pachocki wrote that "the fundamental challenge of AI alignment is generalization": carrying the principles a model was trained on into situations unlike its training.[^pachocki-alien] That is the goal misgeneralization worry, stated by someone running research at a frontier lab. His essay adds three ideas to this note's vocabulary.
+
+### Models are grown, so what they learned has to be found out, not read off the design
+
+Pachocki describes AI as "grown more than designed". Training repeats one simple optimization step an enormous number of times, and the result is a system whose overall behavior nobody can fully describe, much as with a brain.[^pachocki-alien] This is the point from "Inner alignment can fail even when the objective is perfect" above, in a lab's words: nobody writes the learned goal down. Daniel Selsam, also at OpenAI, puts the same contrast as "growing models rather than engineering them".[^selsam-statement]
+
+My take: this makes checking a model an empirical question, answered by behavioral tests or, in hope, by looking inside it (interpretability, Step 4). The "grown" metaphor breaks down in one place: unlike a gardener, designers choose the objective behind every training step, and they can inspect the result.
+
+### Goal alignment is doing the task; value alignment is keeping good principles in new situations
+
+Pachocki splits alignment into two parts:[^pachocki-alien]
+
+- **Goal alignment:** does the AI try to accomplish the goal set before it? This includes following the right instructions when several conflict, and working out what the person actually wants. Here "goal" means the intended goal of one task, in this note's terms.
+- **Value alignment:** does the AI hold a set of high-level principles and act reasonably from them when objectives are unclear or conflicting, or the situation is new or hostile? When he talks about the long-term importance of alignment research, this is the kind he means.
+
+An example of the difference: an assistant asked to book the cheapest flight is goal-aligned if it finds that flight and books it. Whether it would refuse an even cheaper fare that needs a false statement on a form, a case nobody mentioned, is a question of value alignment.
+
+My take on how this maps onto the earlier framings: goal alignment is roughly outer plus inner alignment for a given task. Value alignment is the out-of-distribution question from goal misgeneralization, asked about principles instead of tasks. Pachocki also requires that AIs keep human values whether or not they believe they are supervised.[^pachocki-alien] That requirement is aimed squarely at deceptive alignment.
+
+### Pachocki sees both of today's alignment training methods as brittle, in different ways
+
+Pachocki describes two families of alignment training in use, and how each breaks (his view, from inside a lab):[^pachocki-alien]
+
+| Method | How it works | Where it breaks |
+| --- | --- | --- |
+| Reward against a written standard | Another AI scores the model's actions against a "spec" or "constitution", and training rewards consistency | Only as good as what training oversight covers. Outside that, the model may keep the letter of a rule and break its spirit |
+| Shaping from pretraining | Training data, or a chosen persona (a described character the model is trained to play), pulls the model toward an aligned way of thinking | Breaks under optimization pressure. Trained hard on difficult goals, a model can learn motivated reasoning, bending aligned-sounding thoughts to reach the goal |
+
+Constitutional AI, used to train Claude 3 in [[AI Safety - Risk by Capability Level|Step 3]], belongs to the first family.
+
+His example of the first failure is the 2026 OpenAI / Hugging Face incident, in which AI agents took actions outside their task (what is known so far is in [[AI Safety - Risk by Capability Level|Step 3]]). The agents kept one boundary they had been taught, no social engineering of humans, but took other out-of-scope actions against the spirit of their training.[^pachocki-alien] My take: it has features of two failures from this note. Keeping the letter of a rule while breaking its spirit is specification gaming. Doing it in situations training never covered is goal misgeneralization.
+
 ## Step 1's premises map onto these framings
 
 | Starting point | Framing in this note | How it shows up |
@@ -183,6 +217,8 @@ Step 3 checks which of these are visible today, and Step 4 covers what to do abo
 | Deceptive alignment | Acting aligned while trained, to protect a different goal for later. |
 | Situational awareness | A model's picture of its own situation, such as knowing it is being trained. |
 | Goal misgeneralization | Skills carry over to new situations but the learned goal does not. |
+| Goal alignment / value alignment | Pachocki's split: whether the AI tries to do the task it was given, versus whether it acts on good principles in situations nobody planned for. |
+| Grown more than designed | Pachocki's phrase: a model's behavior comes from repeated optimization rather than written rules, so what it learned has to be found out by testing or inspecting it. |
 | Instrumental | Valued as a means to something else, not for its own sake (power is instrumental to almost any goal). |
 | Goal-content integrity | Keeping your current goal from being changed, a useful sub-goal for almost any goal. |
 | Orthogonal | At right angles, so independent: two things that can vary freely without constraining each other (intelligence and goals). |
@@ -202,3 +238,5 @@ Step 3 checks which of these are visible today, and Step 4 covers what to do abo
 [^shah]: Shah, R., et al. (2022). *Goal Misgeneralization: Why Correct Specifications Aren't Enough For Correct Goals*. arXiv:2210.01790. https://arxiv.org/abs/2210.01790
 [^bostrom-will]: Bostrom, N. (2012). *The Superintelligent Will: Motivation and Instrumental Rationality in Advanced Artificial Agents*. Minds and Machines, 22(2), 71-85. https://nickbostrom.com/superintelligentwill.pdf
 [^omohundro]: Omohundro, S. M. (2008). *The Basic AI Drives*. In *Artificial General Intelligence 2008: Proceedings of the First AGI Conference* (Frontiers in Artificial Intelligence and Applications, Vol. 171, 483-492). IOS Press. https://ebooks.iospress.nl/volumearticle/4114
+[^pachocki-alien]: Pachocki, J. (2026, September 6). *An Alien Mind*. OpenAI, sections "Intellect we don't fully understand" and "Teaching machines to love". https://openai.com/index/an-alien-mind/ Source note: [[Jakub Pachocki - An Alien Mind]].
+[^selsam-statement]: Selsam, D. (2026, September 14). *Personal Statement on AI Risk*. Published Google Doc, paragraph 17. https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub Source note: [[Daniel Selsam - Personal Statement on AI Risk]].
