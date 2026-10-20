@@ -31,10 +31,14 @@ Most of BlueDot's AGI Strategy course is Step 5 material (strategy and governanc
 
 ## Concept notes hold single ideas that the steps link to
 
-Step notes are the study path. Ideas that stand on their own get their own concept note, which several steps and course lessons can link to, and which can later become a page on the public research garden:
+Step notes are the study path. Ideas that stand on their own get their own concept note, which several steps and course lessons can link to:
 
 - [[Recursive Self-Improvement]]: AI doing a growing share of the research that builds the next AI, and why that shrinks the time for safety checks.
 - [[Chain-of-Thought Monitoring]]: reading a model's written reasoning to catch bad intent, why grading that reasoning teaches models to hide it, and why it is getting less reliable.
+
+## My questions live in Thinking
+
+The questions these notes raise, and my answers as they form, are collected in [[Open Questions]]; ideas to act on are in [[Ideas]]. That is where I work out what I think, not just what sources say.
 
 ## Each step is discussed first, then written up
 

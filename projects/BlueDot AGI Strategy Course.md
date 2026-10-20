@@ -93,6 +93,10 @@ Unit titles for 2 to 5 are my labels from the lesson list; the course names Unit
 - **Unit 4.2, The technical challenge** is where the course touches Step 4. Use it to decide whether my first Step 4 topic should still be mechanistic interpretability, or AI control and evals given the Hugging Face incident.
 - **Unit 5** is the "what do I actually do" unit. It ties back to my reason for studying this: work I can do now and get hired for.
 
+## Questions the course raises go to Thinking
+
+Questions from lessons and readings, including the course's own prompts, are collected in [[Open Questions]], and ideas in [[Ideas]]. Lesson 1.1's prompt about Selsam's argument is the first entry.
+
 ## My exercise answers
 
 ### 1.2 What could AI help make better?

@@ -20,6 +20,7 @@ This repository is an Obsidian knowledge vault made of Markdown files.
 - YouTube or podcast source notes -> `sources/youtube/`
 - Essays, statements, lab posts and other articles by someone else -> `sources/articles/`
 - Online courses -> a course tracker in `projects/` (progress, readings, exercise prompts); each reading gets its own source note, and course pages that are only wrappers get none
+- My own questions, ideas and discussion conclusions -> `thinking/` (running lists in `thinking/Open Questions.md` and `thinking/Ideas.md`; a question that gets real thought becomes its own note from `templates/Thinking Note.md`)
 - Evergreen ideas and distilled knowledge -> `concepts/`
 - Active plans, product ideas, and execution docs -> `projects/`
 - Reusable Obsidian note templates -> `templates/`
@@ -46,6 +47,9 @@ This repository is an Obsidian knowledge vault made of Markdown files.
   - `published_at`
 - Add the public article to `published_in` on directly related paper or synthesis notes when useful.
 - After validating requested changes, commit and push them automatically unless the user explicitly says not to. Deployment still requires an explicit request.
+
+## Questions and ideas come first
+Thinking matters more than consuming. When a discussion or an ingest turns up a question, an idea or a conclusion, record it in `thinking/` before the conversation ends, with a link to where it came from. Notes are timeless study notes, not drafts for publication.
 
 ## When the user says "ingest"
 Follow `.claude/skills/ingest/SKILL.md`: verified source notes, durable ideas pulled into concept notes, a citation for every sourced claim, links, index and manifest updates, style checks and the note-reviewer, small commits, push, and a short report.

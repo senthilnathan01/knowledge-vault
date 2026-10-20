@@ -102,6 +102,30 @@
     "tags": ["concepts", "ai-safety", "monitoring", "technical-alignment"]
   },
   {
+    "path": "thinking/",
+    "title": "Thinking",
+    "summary": "My own questions, ideas and discussion conclusions",
+    "tags": ["thinking"]
+  },
+  {
+    "path": "thinking/Thinking.md",
+    "title": "Thinking Guide",
+    "summary": "Guide to the thinking folder: what goes in each list and when an entry becomes its own note",
+    "tags": ["thinking", "guide"]
+  },
+  {
+    "path": "thinking/Open Questions.md",
+    "title": "Open Questions",
+    "summary": "Running list of questions to work out, each with where it came from, why it matters, and a first take where offered",
+    "tags": ["thinking", "questions", "ai-safety"]
+  },
+  {
+    "path": "thinking/Ideas.md",
+    "title": "Ideas",
+    "summary": "Running list of things to try, build, write or connect, each with its origin and first step",
+    "tags": ["thinking", "ideas"]
+  },
+  {
     "path": "projects/",
     "title": "Projects",
     "summary": "Active project plans and execution notes",
@@ -160,6 +184,12 @@
     "title": "Publication Draft Template",
     "summary": "Private staging template and safety checklist for public promotion",
     "tags": ["templates", "publishing"]
+  },
+  {
+    "path": "templates/Thinking Note.md",
+    "title": "Thinking Note Template",
+    "summary": "Template for a question or idea thought through: current answer and certainty, the case for and against, what would change my mind, next step, history",
+    "tags": ["templates", "thinking"]
   },
   {
     "path": "templates/Source Note.md",

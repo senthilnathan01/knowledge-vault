@@ -32,6 +32,12 @@
 - `concepts/Recursive Self-Improvement.md` — AI doing a growing share of AI research: the feedback loop, how far along it is, why it shrinks time for safety checks, and the steer-or-slow responses
 - `concepts/Chain-of-Thought Monitoring.md` — reading a model's written reasoning to catch bad intent: why it works, why grading the reasoning teaches hiding, its limits, and why it is getting less reliable
 
+## Thinking
+- `thinking/` — my own questions, ideas and discussion conclusions; matters more than any single source note
+- `thinking/Thinking.md` — guide: what goes in each list and when an entry becomes its own note
+- `thinking/Open Questions.md` — running list of questions to work out, with where each came from and Claude's first take where offered
+- `thinking/Ideas.md` — running list of things to try, build, write or connect
+
 ## Projects
 - `projects/` — active project plans, execution notes, and product thinking
 - `projects/Projects.md` — project guide for active work
@@ -45,6 +51,7 @@
 - `templates/Paper Note.md` — structured paper reading note
 - `templates/Synthesis Note.md` — multi-source synthesis
 - `templates/Publication Draft.md` — private staging note for public promotion
+- `templates/Thinking Note.md` — a question or idea thought through: current answer, case for and against, what would change my mind
 - `templates/Source Note.md` — source note for essays, statements, posts, videos and podcasts
 - `templates/Note Style Guide.md` — how to write notes: consumable writing for a newcomer, linking notes into a map, certainty marking, footnote citations, and diagrams
 

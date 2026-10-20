@@ -26,7 +26,7 @@ GUIDE = "templates/Note Style Guide.md"
 
 # Notes written in the vault's own voice. Blog sources are other people's
 # articles; templates, social captions and root files follow other rules.
-INCLUDE = ("concepts/", "projects/", "sources/", "books/")
+INCLUDE = ("concepts/", "projects/", "sources/", "books/", "thinking/")
 EXCLUDE = ("sources/blogs/", "sources/papers/_pdf/")
 
 MAX_BOLD_PER_SECTION = 4
