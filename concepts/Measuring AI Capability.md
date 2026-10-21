@@ -73,6 +73,8 @@ Capability tests measure what models can do. Anthropic proposes measuring how mo
 - **How well AI agents are overseen**, through monitor coverage, review speed and how often actions are blocked or flagged.
 - **How compute is split**, including the share going to safety work.
 
+Another process measure is **uplift**, how many times faster AI makes researchers, which the AI Futures Project now uses to forecast its Automated Coder milestone ([[Intelligence Explosion]]).[^aifutures-q25]
+
 These measure the inputs and the process behind progress. Claude's take (not yet discussed): they are the most direct evidence so far on [[Recursive Self-Improvement]]. These capability measurements also become the "means" evidence in [[Rogue Deployments]].
 
 ## Safety thresholds are only as good as the measurements under them
@@ -89,3 +91,4 @@ Claude's take (not yet discussed): labs' scaling policies (their own rules tying
 [^todd-agi2030]: Todd, B. (2025, March). *Will we have AGI by 2030?* 80,000 Hours, sections "2. Post training of reasoning models with reinforcement learning" and "4. The next stage: building better agents" (including the April 2025 update on four-month doubling). https://80000hours.org/ai/guide/when-will-agi-arrive/ Source note: [[Benjamin Todd - Will We Have AGI by 2030]].
 [^owen-2030]: Owen, D. (2025, September 16). *What will AI look like in 2030?* Epoch AI (benchmark descriptions under "AI will accelerate scientific R&D across several domains"). https://epoch.ai/publications/what-will-ai-look-like-in-2030 Source note: [[David Owen - What Will AI Look Like in 2030]].
 [^bluedot-2-1]: BlueDot Impact. *AGI Strategy, Unit 2: What drives AI progress?* Accessed 2026-10-21. https://bluedot.org/courses/agi-strategy/2/1 Quotes Todd's September 2026 assessment of his article.
+[^aifutures-q25]: Lifland, E., Kokotajlo, D., & Halstead, B. (2026, August 17). *Q2.5 2026 Timelines Update: Uplift and Revenue*. AI Futures Project blog. https://blog.aifutures.org/p/q25-2026-timelines-update-uplift Source note: [[Lifland, Kokotajlo and Halstead - Q2.5 2026 Timelines Update]].

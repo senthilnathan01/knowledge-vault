@@ -4,7 +4,7 @@ status: active
 visibility: private
 created: 2026-10-21
 tags: [ai-progress, timelines, forecasting, agi]
-sources: ["Benjamin Todd - Will We Have AGI by 2030", "David Owen - What Will AI Look Like in 2030", "METR - Frontier Risk Report February to March 2026"]
+sources: ["Benjamin Todd - Will We Have AGI by 2030", "David Owen - What Will AI Look Like in 2030", "METR - Frontier Risk Report February to March 2026", "Kokotajlo et al - AI 2027", "Lifland, Kokotajlo and Halstead - Q2.5 2026 Timelines Update"]
 ---
 
 # AI Timelines
@@ -49,6 +49,14 @@ The main forecasting method is simple: measure the trends in compute, algorithms
 Todd's own record is one test of the method. Of the predictions he made in early 2025 for the end of 2026, his September 2026 assessment says most held or were beaten: FrontierMath was saturated (he had predicted 50% to saturated), SWE-bench Verified and GPQA were saturated as predicted, Humanity's Last Exam reached 54% (he had predicted 40% to saturated), the time horizon beat his forecast, and lab revenue grew 6x a year instead of 4x.[^bluedot-2-1]
 
 Todd's main miss was that shifting compute into reinforcement learning slowed pretraining; he also thinks he may have overemphasized test-time compute.[^bluedot-2-1] Claude's take (not yet discussed): that miss shows the method's weakness: it can't see interactions between drivers, or new drivers and limits, coming.
+
+## Scenarios make forecasts concrete enough to grade
+
+A second method is to write one concrete path month by month, then check reality against it. AI 2027 is a well-known example: a scenario in which AI agents automate AI research and produce a superhuman AI researcher by late 2027 ([[Kokotajlo et al - AI 2027]]).[^ai2027] Its authors say they wrote it to be concrete so it could be judged later, and that 2027 was their most likely year, with their median estimates somewhat later.
+
+In August 2026 they graded it: "reality seems to be going about 70-90% as fast as AI 2027 predicted" (authors' own assessment). At 75% of the scenario's pace, the milestone they call the Automated Coder, AI a lab would rather keep than its software engineers, would arrive in mid-2027.[^aifutures-q25] Their all-things-considered medians for that milestone run from late 2027 to January 2030 across the three authors, and assume no deliberate slowdown.[^aifutures-q25] How fast an intelligence explosion could run is in [[Intelligence Explosion]].
+
+Claude's take (not yet discussed): grading a scenario is a check that trend lines don't give, because a story forces you to say what should happen in which order. Its weakness is that the parts that make a story vivid, such as a stolen model or a political decision, are the hardest to forecast.
 
 ## The probability is concentrated in the next few years, then thins out
 
@@ -97,3 +105,5 @@ Claude's take (not yet discussed):
 [^todd-agi2030]: Todd, B. (2025, March). *Will we have AGI by 2030?* 80,000 Hours, Introduction and sections "4. The next stage: building better agents", "II. How good will AI become by 2030?", "III. Why the next 5 years are crucial" and "Two potential futures for AI". https://80000hours.org/ai/guide/when-will-agi-arrive/ Source note: [[Benjamin Todd - Will We Have AGI by 2030]].
 [^owen-2030]: Owen, D. (2025, September 16). *What will AI look like in 2030?* Epoch AI, sections "Scaling is likely to continue to 2030" and "AI will accelerate scientific R&D across several domains". https://epoch.ai/publications/what-will-ai-look-like-in-2030 Source note: [[David Owen - What Will AI Look Like in 2030]].
 [^metr-frontier]: METR (2026, May 19). *Frontier Risk Report (February to March 2026)*, Table 1. https://metr.org/blog/2026-05-19-frontier-risk-report/ Source note: [[METR - Frontier Risk Report February to March 2026]].
+[^ai2027]: Kokotajlo, D., Alexander, S., Larsen, T., Lifland, E., & Dean, R. (2025, April 3). *AI 2027*. AI Futures Project. https://ai-2027.com/ Source note: [[Kokotajlo et al - AI 2027]].
+[^aifutures-q25]: Lifland, E., Kokotajlo, D., & Halstead, B. (2026, August 17). *Q2.5 2026 Timelines Update: Uplift and Revenue*. AI Futures Project blog, "Summary" and "Updated forecasts". https://blog.aifutures.org/p/q25-2026-timelines-update-uplift Source note: [[Lifland, Kokotajlo and Halstead - Q2.5 2026 Timelines Update]].
