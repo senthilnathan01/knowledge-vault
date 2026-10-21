@@ -63,7 +63,13 @@ Order I'm taking it in: after lesson 1.1, I paused Unit 1 on 2026-10-21 and jump
   - Ideas pulled out: [[Drivers of AI Progress]], [[AI Timelines]], and why AI research may be automated first in [[Recursive Self-Improvement]].
   - The lesson's prompt, where to place today's models in Todd's 2025 picture, is in [[Open Questions]].
   - Optional readings listed, not yet read: Epoch AI, "Can AI scaling continue through 2030?"; Kaplan et al., "Scaling Laws for Neural Language Models" (arXiv:2001.08361); Villalobos et al., "Will we run out of data? Limits of LLM scaling based on human-generated data" (arXiv:2211.04325); Epoch AI, "The case for multi-decade AI timelines"; "The state of AI safety in four fake graphs" (Windows on Theory, 2026); a Dwarkesh Patel podcast with Dario Amodei.[^lesson-2-1]
-- [ ] 2.2 What can increasingly capable AI systems do? (1h 15min)
+- [x] 2.2 What can increasingly capable AI systems do? (1h 15min), ingested 2026-10-22
+  - Reading: METR, "Frontier Risk Report (February to March 2026)" (2026). Source note: [[METR - Frontier Risk Report February to March 2026]]. The lesson assigns the first "Means" subsection and the judgment section through Table 3, and asks what distinguishes the tasks agents do well from those they struggle with.
+  - Reading: Marina Favaro and Phillie Wright, "Measurements for understanding the pace of AI development inside frontier labs" (Anthropic, 2026). Source note: [[Favaro and Wright - Measurements for Understanding the Pace of AI Development]]. The lesson assigns section 1, footnote 1, and the appendix on AI-led R&D.
+  - Reference pages, used in concept notes rather than given source notes: Epoch AI's "Trends in AI" dashboard, the Epoch Capabilities Index, and Epoch's benchmark directory.
+  - Ideas pulled out: [[Measuring AI Capability]], [[Rogue Deployments]], plus updates to [[Recursive Self-Improvement]], [[Chain-of-Thought Monitoring]], [[Drivers of AI Progress]], [[AI Timelines]] and [[AI Safety - Risk by Capability Level]].
+  - Suggested practice: push AI systems to their limits yourself (the course suggests Claude Code or Codex), and try forecasting on Metaculus's AI 2027 question series. Both are in [[Ideas]]. The lesson's ECI comparison prompt is in [[Open Questions]].
+  - Optional readings listed, not yet read: "PaperBench: Evaluating AI's Ability to Replicate AI Research" (Starace et al., 2025); "Vending-Bench 2" (Andon Labs, 2025); "OpenAI's GPT-6 Astra on ARC-AGI-3" (ARC Prize, 2026); "What a 100-year-old horse teaches us about AI" (Rational Animations, 2025, on why high benchmark scores can mislead).[^lesson-2-2]
 - [ ] 2.3 How could progress accelerate from here? (1h 30min)
 
 ### Unit 3: Pathways to harm
@@ -126,3 +132,4 @@ _Not yet written._
 [^course]: BlueDot Impact. *AGI Strategy* (course). Accessed 2026-10-17. https://bluedot.org/courses/agi-strategy
 [^lesson-1-1]: BlueDot Impact. *AGI Strategy, Unit 1: What's at stake?* Accessed 2026-10-20. https://bluedot.org/courses/agi-strategy/1/1
 [^lesson-2-1]: BlueDot Impact. *AGI Strategy, Unit 2: What drives AI progress?* Accessed 2026-10-21. https://bluedot.org/courses/agi-strategy/2/1
+[^lesson-2-2]: BlueDot Impact. *AGI Strategy, Unit 2: What can increasingly capable AI systems do?* Accessed 2026-10-22. https://bluedot.org/courses/agi-strategy/2/2

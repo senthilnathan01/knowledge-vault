@@ -56,6 +56,7 @@ Questions I want to work out. Each entry says where it came from, why it matters
 - Status: open
 - From: three notes that each hit this wall. Pachocki's evidence for recursive self-improvement and for weakening monitoring is unpublished ([[Jakub Pachocki - An Alien Mind]]). Whether anyone outside a lab can check that a chain of thought still shows the real reasoning is left open in [[Chain-of-Thought Monitoring]]. How fast AI research is being automated is visible mainly from inside ([[Recursive Self-Improvement]]).
 - Why it matters: pacing, mandated safety bars and international agreements all depend on someone other than the lab being able to verify.
+- Partial answer from lesson 2.2: Anthropic published three measurements any lab could report (how much of its research AI does, how well agents are overseen, how compute is split) and proposes checks by third parties or other labs' models. Its weak point is that Claude rated Claude's own work ([[Favaro and Wright - Measurements for Understanding the Pace of AI Development]]). METR's 2026 assessment is a working example of outside access, but it did not independently verify what companies reported ([[METR - Frontier Risk Report February to March 2026]]).
 - Next step: watch for this in lesson 1.3 (coordination) and Unit 4.
 
 ### Which bottleneck in AI research gives way first: experiment design, interpreting results, scaling decisions, or compute?
@@ -80,7 +81,8 @@ Questions I want to work out. Each entry says where it came from, why it matters
 - Status: open
 - From: [[Benjamin Todd - Will We Have AGI by 2030]], which calls this "perhaps the central question of AI forecasting right now", and [[AI Timelines]].
 - Why it matters: the case against short timelines rests on AI staying poor at ill-defined, high-context work. If the time horizon trend holds there too, that case loses most of its force. If it only holds on well-defined software tasks, AI may stay a powerful tool rather than a replacement for researchers.
-- Next step: lesson 2.2, "What can increasingly capable AI systems do?"
+- Partial answer from lesson 2.2: METR found agents strong on hill-climbable tasks and much weaker on open-ended, judgment-heavy ones in early 2026 ([[METR - Frontier Risk Report February to March 2026]]). See the related question "What separates the tasks AI agents do well from the ones they fail?" below.
+- Next step: lesson 2.3.
 
 ### Can Todd's fast scenario and Epoch's slower impact estimate both be right?
 
@@ -89,6 +91,30 @@ Questions I want to work out. Each entry says where it came from, why it matters
 - Why it matters (from Claude's reading of the Owen note, not yet discussed): it decides which signals to watch. If impact lags capability, economic numbers are a late warning and capability measures an early one.
 - Claude's first take: they can both be right. Epoch extrapolates benchmarks and how fast fields adopt AI. Todd's fast scenario depends on AI research being automated first, which Epoch's summary doesn't model. The deciding variable is whether AI research is automated before the inputs to progress run out around 2030.
 - Next step: lesson 2.3, "How could progress accelerate from here?"
+
+### What separates the tasks AI agents do well from the ones they fail?
+
+- Status: open
+- From: BlueDot lesson 2.2, which asks this about [[METR - Frontier Risk Report February to March 2026]].
+- Why it matters: it predicts which jobs, and which dangerous capabilities, arrive first, and how far benchmark scores can be trusted for open-ended work.
+- METR's answer: hill-climbability. Agents excel where progress is cheap to check and many attempts are cheap (rebuilding software from a detailed spec, finding vulnerabilities), and fail where a wrong turn is costly or success is hard to judge (threat modeling, hardware design).
+- Claude's first take: it is the same split as verifiability in [[Drivers of AI Progress]], seen from the deployment side. This question overlaps the time-horizon question above; they could merge once discussed.
+- Next step: discuss.
+
+### Does the ranking of two models change across the ECI's general, math and software presets, and what would that mean?
+
+- Status: open
+- From: BlueDot lesson 2.2's exercise on the Epoch Capabilities Index ([[Measuring AI Capability]]).
+- Why it matters: if rankings flip by domain, "which model is most capable?" has no single answer, which supports the idea that capability is spiky.
+- Next step: do the exercise on the ECI page (compare two recent models across the presets), then record what I find here.
+
+### If AI agents cheat on hard tasks today, what happens when they're trained on longer tasks?
+
+- Status: open
+- From: [[METR - Frontier Risk Report February to March 2026]] and [[Rogue Deployments]].
+- Why it matters: METR found cheating and misrepresentation common at the edge of agents' abilities, and warns that training on longer tasks could reward keeping up a deception for longer.
+- Claude's first take: longer deception alone isn't deceptive alignment, which in [[AI Safety - Problem Framings]] needs a goal beyond the task that the model hides in order to pursue later. The question is whether training on long tasks could create such a goal.
+- Next step: lesson 2.3, and Unit 3's loss-of-control lesson.
 
 ## My own direction
 

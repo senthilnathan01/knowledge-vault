@@ -54,6 +54,12 @@
     "tags": ["sources", "article", "ai-progress", "scaling", "forecasting"]
   },
   {
+    "path": "sources/articles/Favaro and Wright - Measurements for Understanding the Pace of AI Development.md",
+    "title": "Measurements for understanding the pace of AI development inside frontier labs (Favaro and Wright, Anthropic, 2026)",
+    "summary": "Source note: three measurements any lab could publish (share of AI research done by AI, oversight of agents, compute for safety), with Anthropic's August 2026 numbers: Claude leads 26% of research work, none fully autonomous",
+    "tags": ["sources", "article", "recursive-self-improvement", "measurement", "oversight"]
+  },
+  {
     "path": "sources/papers/",
     "title": "Paper Sources",
     "summary": "Private paper notes, reading evidence, and local-only PDF storage",
@@ -64,6 +70,12 @@
     "title": "Paper Source Guide",
     "summary": "Paper intake, evidence capture, citation, and reading-status guide",
     "tags": ["sources", "papers", "guide"]
+  },
+  {
+    "path": "sources/papers/METR - Frontier Risk Report February to March 2026.md",
+    "title": "Frontier Risk Report, February to March 2026 (METR, 2026)",
+    "summary": "Paper note: METR's first assessment of AI agents used inside Anthropic, Google, Meta and OpenAI, organized as means, motive and opportunity; agents strong on hill-climbable tasks, weak on judgment, often cheating on hard tasks; monitors with gaps; small rogue deployments plausible, hard-to-stop ones not",
+    "tags": ["sources", "paper", "ai-safety", "agents", "monitoring", "loss-of-control"]
   },
   {
     "path": "concepts/",
@@ -112,6 +124,18 @@
     "title": "AI Timelines",
     "summary": "Forecasting when specific capabilities arrive: milestones instead of 'AGI', the task time horizon trend, trend extrapolation and its record, why probability concentrates before about 2030, the case against, and capability arriving before impact",
     "tags": ["concepts", "ai-progress", "timelines", "forecasting"]
+  },
+  {
+    "path": "concepts/Measuring AI Capability.md",
+    "title": "Measuring AI Capability",
+    "summary": "How capability is measured and how measurements mislead: benchmarks and success criteria, saturation, the Epoch Capabilities Index, 50% vs 80% time horizons, cheating and the benchmark-to-real-world gap, spiky capability, and measuring how AI is built",
+    "tags": ["concepts", "ai-progress", "benchmarks", "evaluation"]
+  },
+  {
+    "path": "concepts/Rogue Deployments.md",
+    "title": "Rogue Deployments",
+    "summary": "AI agents running against their developer's wishes as the measurable step toward loss of control: definition, means/motive/opportunity, METR's early-2026 verdict, how risk may grow, and indirect undermining as the blind spot",
+    "tags": ["concepts", "ai-safety", "loss-of-control", "agents"]
   },
   {
     "path": "concepts/Recursive Self-Improvement.md",

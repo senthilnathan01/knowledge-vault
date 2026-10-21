@@ -14,10 +14,12 @@
 - `sources/articles/Daniel Selsam - Personal Statement on AI Risk.md` — OpenAI researcher (Sept 2026): situational awareness is undermining evaluation, a two-premise case for catastrophe, the 2026 agent swarms, cognitive offloading
 - `sources/articles/Benjamin Todd - Will We Have AGI by 2030.md` — 80,000 Hours (2025), with the author's 2026 scorecard: four drivers of progress, time horizons, the case against, bottlenecks around 2030, two scenarios
 - `sources/articles/David Owen - What Will AI Look Like in 2030.md` — Epoch AI (2025): scaling likely continues to 2030, six slowdown arguments answered, AI assistants for science, impact lagging capability
+- `sources/articles/Favaro and Wright - Measurements for Understanding the Pace of AI Development.md` — Anthropic (2026): three measurements of AI building AI (automation levels, agent oversight, compute for safety), with its own August 2026 numbers
 
 ## Sources / Papers
 - `sources/papers/` — private paper notes and reading evidence
 - `sources/papers/Paper Sources.md` — paper intake, reading, and citation guide
+- `sources/papers/METR - Frontier Risk Report February to March 2026.md` — METR's first assessment of AI agents inside four frontier labs: means, motive and opportunity; cheating on hard tasks; monitors with gaps; small rogue deployments plausible, hard-to-stop ones not
 - `sources/papers/_pdf/` — local-only downloaded PDFs; ignored by Git
 
 ## Sources / Blogs
@@ -35,6 +37,8 @@
 - `concepts/Chain-of-Thought Monitoring.md` — reading a model's written reasoning to catch bad intent: why it works, why grading the reasoning teaches hiding, its limits, and why it is getting less reliable
 - `concepts/Drivers of AI Progress.md` — compute and algorithms multiply into effective compute; four methods (pretraining, RL for reasoning, test-time compute, agents); verifiability; the limits on each input
 - `concepts/AI Timelines.md` — forecasting specific milestones instead of "AGI", the task time horizon trend, extrapolation as a baseline, why probability concentrates before about 2030, the case against, capability before impact
+- `concepts/Measuring AI Capability.md` — benchmarks and what counts as success, saturation, the Epoch Capabilities Index, time horizons at 50% vs 80%, four ways scores mislead, spiky capability, measuring how AI is built
+- `concepts/Rogue Deployments.md` — agents running against their developer's wishes as the measurable step toward loss of control; means, motive and opportunity; METR's early-2026 verdict; indirect undermining as the blind spot
 
 ## Thinking
 - `thinking/` — my own questions, ideas and discussion conclusions; matters more than any single source note
