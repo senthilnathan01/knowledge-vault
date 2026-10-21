@@ -4,7 +4,7 @@ status: active
 visibility: private
 created: 2026-10-21
 tags: [ai-progress, timelines, forecasting, agi]
-sources: ["Benjamin Todd - Will We Have AGI by 2030", "David Owen - What Will AI Look Like in 2030"]
+sources: ["Benjamin Todd - Will We Have AGI by 2030", "David Owen - What Will AI Look Like in 2030", "METR - Frontier Risk Report February to March 2026"]
 ---
 
 # AI Timelines
@@ -38,7 +38,7 @@ A **time horizon** measures how long a task an AI can complete, using the time a
 
 The trend, as Todd reported it in 2025: GPT-2 could do tasks that take humans a few seconds, GPT-4 a few minutes, and late-2024 reasoning models just under an hour. The horizon doubled about every seven months from 2020, and possibly every four months from 2024 (established trend data; whether it continues is debated).[^todd-agi2030] For scale: a seven-month doubling means about 3.4 doublings every two years, so roughly a tenfold longer task every two years.
 
-By September 2026 Todd reported the 50% time horizon at 16 hours or more (about two working days of expert time), against his prediction of 6 hours for the end of 2026 (his assessment, as quoted by the course).[^bluedot-2-1] So the trend ran faster than his forecast.
+By September 2026 Todd reported the 50% time horizon at 16 hours or more (about two working days of expert time), against his prediction of 6 hours for the end of 2026 (his assessment, as quoted by the course).[^bluedot-2-1] So the trend ran faster than his forecast. METR's report on February to March 2026, earlier than Todd's figure, shows how much the reliability level matters: the best public models reached about 12 hours at 50% reliability but only about 1.5 hours at 80% (four successes in five). Its benchmark was nearly saturated, so the top figures are uncertain (METR's findings).[^metr-frontier] How to read these measures, and how they mislead, is in [[Measuring AI Capability]].
 
 Todd calls the key question "perhaps the central question of AI forecasting right now: will the horizon over which AIs can act plateau or continue to improve?"[^todd-agi2030]
 
@@ -96,3 +96,4 @@ Claude's take (not yet discussed):
 [^bluedot-2-1]: BlueDot Impact. *AGI Strategy, Unit 2: What drives AI progress?* Accessed 2026-10-21. https://bluedot.org/courses/agi-strategy/2/1 Includes METR's time horizon definition and quotes Todd's September 2026 assessment of his article.
 [^todd-agi2030]: Todd, B. (2025, March). *Will we have AGI by 2030?* 80,000 Hours, Introduction and sections "4. The next stage: building better agents", "II. How good will AI become by 2030?", "III. Why the next 5 years are crucial" and "Two potential futures for AI". https://80000hours.org/ai/guide/when-will-agi-arrive/ Source note: [[Benjamin Todd - Will We Have AGI by 2030]].
 [^owen-2030]: Owen, D. (2025, September 16). *What will AI look like in 2030?* Epoch AI, sections "Scaling is likely to continue to 2030" and "AI will accelerate scientific R&D across several domains". https://epoch.ai/publications/what-will-ai-look-like-in-2030 Source note: [[David Owen - What Will AI Look Like in 2030]].
+[^metr-frontier]: METR (2026, May 19). *Frontier Risk Report (February to March 2026)*, Table 1. https://metr.org/blog/2026-05-19-frontier-risk-report/ Source note: [[METR - Frontier Risk Report February to March 2026]].

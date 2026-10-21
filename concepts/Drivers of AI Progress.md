@@ -69,6 +69,21 @@ How sure to be: both are projections. Epoch's view is that the limits are surmou
 
 Claude's take (not yet discussed): the researcher input is the one that matters most for safety, because it is the one AI could replace. If AI can do AI research, the workforce limit disappears, and that is the loop in [[Recursive Self-Improvement]].
 
+## Epoch's dashboard gives a dated snapshot of the drivers
+
+Epoch AI keeps a public dashboard of these trends. Its figures as accessed in October 2026 (the page says it was last updated February 5, 2026), with Epoch's 90% confidence intervals where given:[^epoch-trends]
+
+| Trend | Rate | What it means (Claude's reading) |
+| --- | --- | --- |
+| Training compute for frontier language models | 5x per year since 2020 (4x to 6x) | About 10,000 times more since 2020, Epoch's figure; a bit faster than Todd's 4x |
+| Total computing power of all AI chips in use | 3.4x per year (3.2x to 3.7x) | Doubling about every 7 months since 2022 |
+| Cost to train a frontier model | 3.5x per year since 2020 (2.8x to 4.4x) | Spending, not just efficiency, is driving the growth |
+| AI chip performance per dollar | 1.49x per year since 2023 (1.36x to 1.66x) | Each dollar buys about half again as much computing each year |
+| Time to build a gigawatt-scale data center | About 2.1 years (1 to 3.6) | Power and buildings take years, so they can't respond instantly |
+| Capital cost per gigawatt of data center | About $38 billion | So Epoch's $100 billion 2030 training cluster would be roughly 2.5 gigawatts |
+
+These numbers will change; the point of recording them is to compare later readings against them. Epoch's capability index, which rose about 14 points a year after reasoning models arrived, is covered in [[Measuring AI Capability]].
+
 ## Why it matters for safety: the drivers decide how much warning there is
 
 Claude's take (not yet discussed):
@@ -82,3 +97,4 @@ Claude's take (not yet discussed):
 [^todd-agi2030]: Todd, B. (2025, March). *Will we have AGI by 2030?* 80,000 Hours, section "I. What's driven recent AI progress? And will it continue?" and section "III. Why the next 5 years are crucial". https://80000hours.org/ai/guide/when-will-agi-arrive/ Source note: [[Benjamin Todd - Will We Have AGI by 2030]].
 [^owen-2030]: Owen, D. (2025, September 16). *What will AI look like in 2030?* Epoch AI, section "Scaling is likely to continue to 2030". https://epoch.ai/publications/what-will-ai-look-like-in-2030 Source note: [[David Owen - What Will AI Look Like in 2030]].
 [^bluedot-2-1]: BlueDot Impact. *AGI Strategy, Unit 2: What drives AI progress?* Accessed 2026-10-21. https://bluedot.org/courses/agi-strategy/2/1 Quotes Todd's September 2026 assessment of his article.
+[^epoch-trends]: Epoch AI. *Trends in AI* (dashboard; page says updated February 5, 2026). Accessed 2026-10-22. https://epoch.ai/trends

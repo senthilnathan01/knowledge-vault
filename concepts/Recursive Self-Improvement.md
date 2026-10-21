@@ -4,7 +4,7 @@ status: active
 visibility: private
 created: 2026-10-20
 tags: [ai-safety, recursive-self-improvement, capabilities, governance]
-sources: ["Jakub Pachocki - An Alien Mind", "Daniel Selsam - Personal Statement on AI Risk", "Benjamin Todd - Will We Have AGI by 2030"]
+sources: ["Jakub Pachocki - An Alien Mind", "Daniel Selsam - Personal Statement on AI Risk", "Benjamin Todd - Will We Have AGI by 2030", "Favaro and Wright - Measurements for Understanding the Pace of AI Development", "METR - Frontier Risk Report February to March 2026"]
 ---
 
 # Recursive Self-Improvement
@@ -53,16 +53,18 @@ An everyday analogy is compound interest: the returns are reinvested, so growth 
 
 ## Labs say the loop has started, but only part of research is automated
 
-How far along this is depends on who you ask, and most of the evidence is lab insiders' judgment rather than published data. Todd, an outsider, argues from public trends.
+Most of the evidence is lab insiders' judgment; Todd argues from public trends; and two 2026 reports add the first measurements.
 
-- **OpenAI's chief scientist expects it to continue.** Pachocki writes that, based on internal results, he has "a strong expectation" that the current speed of progress "could be sustained into recursive self-improvement", and that systems will "increasingly drive their own development" (author's view, evidence unpublished).[^pachocki-rsi] He also says OpenAI points its research toward RSI because it sees that as the only way to stay at the frontier, meaning among the labs with the most capable models.[^pachocki-rsi]
-- **A researcher at the same lab sees real bottlenecks.** Selsam says coding is dramatically faster but other bottlenecks remain: designing and interpreting ambiguous experiments, deciding what and when to scale, and waiting for large training runs. He says there is "no clear trend to extrapolate yet" for these (author's view).[^selsam-loop]
-- **He still sees a real chance of fast progress.** Selsam argues AI research is mostly a game of pushing up a few chosen proxy metrics, numbers that stand in for "better model", and that this game has been easier than expected. He sees "a real possibility" of another dramatic jump within a few years (author's view).[^selsam-loop]
-- **The BlueDot course frames it as a near-term deadline.** The AGI Strategy course's first lesson says OpenAI and Anthropic report using AI extensively in their own research, and cites a senior OpenAI researcher as saying human feedback and direction may stay essential for only two or three more model generations.[^bluedot-1-1] The course gives no timescale for a generation, and I have not checked the underlying reports.
+- OpenAI's chief scientist expects it to continue. Pachocki writes that, based on internal results, he has "a strong expectation" that the current speed of progress "could be sustained into recursive self-improvement", and that systems will "increasingly drive their own development" (author's view, evidence unpublished).[^pachocki-rsi] He also says OpenAI points its research toward RSI because it sees that as the only way to stay at the frontier, meaning among the labs with the most capable models.[^pachocki-rsi]
+- A researcher at the same lab sees real bottlenecks. Selsam says coding is dramatically faster but other bottlenecks remain: designing and interpreting ambiguous experiments, deciding what and when to scale, and waiting for large training runs. He says there is "no clear trend to extrapolate yet" for these (author's view).[^selsam-loop]
+- He still sees a real chance of fast progress. Selsam argues AI research is mostly a game of pushing up a few chosen proxy metrics, numbers that stand in for "better model", and that this game has been easier than expected. He sees "a real possibility" of another dramatic jump within a few years (author's view).[^selsam-loop]
+- The BlueDot course frames it as a near-term deadline. The AGI Strategy course's first lesson says OpenAI and Anthropic report using AI extensively in their own research, and cites a senior OpenAI researcher as saying human feedback and direction may stay essential for only two or three more model generations.[^bluedot-1-1] The course gives no timescale for a generation, and I have not checked the underlying reports.
 - An outside forecaster argues AI research is especially easy to automate. Benjamin Todd of 80,000 Hours gives four reasons: the work is fully virtual, it is the field AI researchers understand best, they have huge incentives to automate it, and nothing stops them deploying AI on it. So AI may do AI research before it can do most remote jobs (author's view).[^todd-agi2030]
 - He frames it as a race against running out of inputs. Compute, money and the human research workforce can't keep growing at today's rates much past 2030. The question is whether AI starts contributing to research before then. If it does, it can stand in for the researchers and keep progress going; if not, progress probably slows (author's view; the inputs are in [[Drivers of AI Progress]], the timing in [[AI Timelines]]).[^todd-agi2030]
+- By August 2026, one lab measured it. Anthropic rated how automated each of 378 kinds of its research work was, on a six-level scale from "no AI involvement" to "fully autonomous". Claude "leads" 26% of the work (does most of a task end to end while a human supervises), over 90% is at "collaborates" (works alongside an engineer who stays involved and reviews the work) or above, and none is fully autonomous (lab's self-report; Claude did the rating, checked against staff ratings).[^favaro-pace]
+- An outside assessor reported humans still set the direction. METR said that, as far as it knew, no company in early 2026 let agents set research agendas or make hiring, budget or risk decisions, and that Anthropic argued its pace of progress had not doubled as of April 2026 (METR's understanding, partly from company reports it did not verify).[^metr-frontier]
 
-Claude's take (not yet discussed): the direction is broadly agreed, the speed is not. Everyone quoted here expects AI to do more of AI research, though Todd says only that it "may" come before other jobs. They differ on whether the remaining human and compute bottlenecks give way within years or hold. Todd adds a deadline: if they haven't given way by about 2030, the inputs stop growing.
+Claude's take (not yet discussed): the direction is broadly agreed, the speed is not. Everyone quoted here expects AI to do more of AI research, though Todd says only that it "may" come before other jobs. They differ on whether the remaining human and compute bottlenecks give way within years or hold. Todd adds a deadline: if they haven't given way by about 2030, the inputs stop growing. The 2026 measurements confirm the loop has started, with humans still choosing what to work on.
 
 ## It matters for safety because most checks run at human speed
 
@@ -86,7 +88,7 @@ The course picks these questions up in two places. Lesson 2.3, "How could progre
 
 ## It leaves open which bottleneck gives way first
 
-- Which human and compute bottlenecks (experiment design, interpretation, scaling decisions, training time) give way first, and how would anyone outside a lab know?
+- Which human and compute bottlenecks (experiment design, interpretation, scaling decisions, training time) give way first, and how would anyone outside a lab know? Anthropic's automation index and METR's assessment are first attempts at the second half ([[Favaro and Wright - Measurements for Understanding the Pace of AI Development]], [[METR - Frontier Risk Report February to March 2026]]).
 - Can a safety bar be defined using measurements that a situationally aware model can't game?
 
 ## Sources
@@ -102,3 +104,5 @@ The course picks these questions up in two places. Lesson 2.3, "How could progre
 [^omohundro]: Omohundro, S. M. (2008). *The Basic AI Drives*. In *Artificial General Intelligence 2008: Proceedings of the First AGI Conference* (Frontiers in Artificial Intelligence and Applications, Vol. 171, 483-492). IOS Press. https://ebooks.iospress.nl/volumearticle/4114
 [^bostrom-will]: Bostrom, N. (2012). *The Superintelligent Will: Motivation and Instrumental Rationality in Advanced Artificial Agents*. Minds and Machines, 22(2), 71-85. https://nickbostrom.com/superintelligentwill.pdf
 [^todd-agi2030]: Todd, B. (2025, March). *Will we have AGI by 2030?* 80,000 Hours, sections "AI research" and "III. Why the next 5 years are crucial". https://80000hours.org/ai/guide/when-will-agi-arrive/ Source note: [[Benjamin Todd - Will We Have AGI by 2030]].
+[^metr-frontier]: METR (2026, May 19). *Frontier Risk Report (February to March 2026)*, key fact 2 ("Agents had significantly worse judgment and reliability than human experts"), Table 4. https://metr.org/blog/2026-05-19-frontier-risk-report/ Source note: [[METR - Frontier Risk Report February to March 2026]].
+[^favaro-pace]: Favaro, M., & Wright, P. (date not stated; data as of August 2026). *Measurements for understanding the pace of AI development inside frontier labs*. Anthropic. https://www.anthropic.com/institute/measuring-pace-of-ai-development Source note: [[Favaro and Wright - Measurements for Understanding the Pace of AI Development]].

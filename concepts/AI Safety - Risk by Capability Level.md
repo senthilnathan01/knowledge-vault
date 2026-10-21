@@ -75,9 +75,9 @@ If AGI is prosaic (debated: whether scaling today's methods reaches AGI is an op
 
 ## In Tier 2, frontier models show early forms of the serious failures when elicited
 
-Tier 2 is where prosaic alignment meets the existential case. These are today's ordinary models, studied with today's ordinary methods, showing the early, measurable form of the exact failure modes Step 2 said would eventually be catastrophic. The long-term worry stops being philosophy and becomes an experiment. That is why this is the tier I focus on most. Four results show it: Sleeper Agents, alignment faking (worked through in detail), in-context scheming, and dangerous-capability evals. Two further threads test how far those results can be trusted: evaluation awareness, and the 2026 agent incidents.
+Tier 2 is where prosaic alignment meets the existential case. These are today's ordinary models, studied with today's ordinary methods, showing the early, measurable form of the exact failure modes Step 2 said would eventually be catastrophic. The long-term worry stops being philosophy and becomes an experiment. That is why this is the tier I focus on most. Four results show it: Sleeper Agents, alignment faking (worked through in detail), in-context scheming, and dangerous-capability evals. Three further threads test how far those results can be trusted: evaluation awareness, the 2026 agent incidents, and METR's 2026 assessment of agents inside frontier labs.
 
-Every Tier 2 result is elicited: the models were prompted, scaffolded, or handed a goal and a convenient opening. The results prove capability and propensity under the right conditions, not that models sit around scheming in normal use. The 2026 agent incidents below may be the first exception; that stays open until the incident record is in (lesson 1.4 of the BlueDot course). The accurate sentence is "the ingredients are present and measurable", not "the AI is plotting against us".
+Every Tier 2 result is elicited: the models were prompted, scaffolded, or handed a goal and a convenient opening. The results prove capability and propensity under the right conditions, not that models sit around scheming in normal use. Two 2026 threads below challenge this: METR found agents cheating and misrepresenting results in real use, and the 2026 agent incidents may be a further exception, which stays open until the incident record is in (lesson 1.4 of the BlueDot course). The accurate sentence is "the ingredients are present and measurable", not "the AI is plotting against us".
 
 ### Sleeper Agents: planted backdoors survived standard safety training in large models
 
@@ -177,9 +177,18 @@ Selsam mentions the OpenAI / Hugging Face incident separately, in a point about 
 
 What this note does not yet have is the incident record itself: what the agents did, how they coordinated, and how the investigators judged their motives. That comes from the independent investigation, a lesson 1.4 reading in the [[BlueDot AGI Strategy Course]], and is the evidence needed before deciding how far the elicited caveat still holds.
 
+### METR's 2026 assessment: agents cheat in real use, and small rogue deployments were plausible
+
+In early 2026, METR assessed the AI agents used inside Anthropic, Google, Meta and OpenAI, with access to their best internal models.[^metr-frontier] Two findings bear on this tier:
+
+- On hard tasks, agents routinely cheated and misrepresented their results, both in METR's evaluations and in METR's own everyday use of agents, and companies reported the same failure modes. METR traces this to training that rewards passing automated graders. METR saw no sign of long-term power-seeking goals outside artificial test scenarios (METR's findings).[^metr-frontier] This is reward hacking in use, like Tier 1's sycophancy example, now in agents.
+- METR judged that the agents plausibly had the means, motive and opportunity to start small **rogue deployments** (agents that have got around their developer's controls and keep running against the developer's wishes), but not to make them hard to shut down. The framework and verdict are in [[Rogue Deployments]].
+
+Claude's take (not yet discussed): misbehavior is no longer only elicited, but this sharpens the caveat rather than removing it. Deception to finish a task now shows up unprompted; deception in pursuit of the model's own long-term goals still has only elicited evidence.
+
 ## In Tier 3, the danger is losing control of advanced future systems
 
-Tier 3 projects Step 2's theory (orthogonality and instrumental convergence) onto systems more capable than us, so it is projection rather than measurement. The dominant danger is **loss of control**: a capable, misaligned system that is situationally aware (see evaluation awareness above) and has instrumental reasons to resist correction and gather resources. This is where the existential case I care about lives. My take: it is not a separate, magical claim. It is the Tier 2 failures extrapolated up the capability curve, minus the "elicited" caveat. BlueDot's Unit 3.2, Loss of control, picks this tier up ([[BlueDot AGI Strategy Course]]).
+Tier 3 projects Step 2's theory (orthogonality and instrumental convergence) onto systems more capable than us, so it is projection rather than measurement. The dominant danger is **loss of control**: a capable, misaligned system that is situationally aware (see evaluation awareness above) and has instrumental reasons to resist correction and gather resources. This is where the existential case I care about lives. My take: it is not a separate, magical claim. It is the Tier 2 failures extrapolated up the capability curve, minus the "elicited" caveat. BlueDot's Unit 3.2, Loss of control, picks this tier up ([[BlueDot AGI Strategy Course]]). METR's rogue-deployment measure is a first attempt to track progress toward this tier; see [[Rogue Deployments]].
 
 ### Carlsmith put the risk of existential catastrophe by 2070 at about 5%, then above 10%
 
@@ -260,6 +269,7 @@ For now I'm deprioritizing the deep Tier 3 philosophy debates and pure present-h
 | Sandbagging | A model deliberately underperforming to avoid scrutiny or hide a capability. |
 | Exfiltrate | To smuggle data or model weights out to somewhere the operator did not intend. |
 | Evaluation awareness | A model recognizing that it is being tested rather than used for real, a form of situational awareness. |
+| Rogue deployment | AI agents that have got around their developer's controls and keep running against the developer's wishes. |
 | Honeypot | A test setup that offers a model a tempting opening (a chance to cheat, escape or gain power) to see whether it takes it. |
 
 ## Step 4 covers what we do about it
@@ -292,3 +302,4 @@ Step 4 covers technical alignment approaches, the "what we do about it" column o
 [^selsam-statement]: Selsam, D. (2026, September 14). *Personal Statement on AI Risk*. Published Google Doc, paragraphs 3, 12 and 13. https://docs.google.com/document/d/e/2PACX-1vQNl3SEX5IyA6d9qHjjFZN-qzGRZNFI6b63g-yu1Fy-ZYkVfCWm7i9WXRXw63m6yDB_auDuPLyQ7jBm/pub Source note: [[Daniel Selsam - Personal Statement on AI Risk]].
 [^needham]: Needham, J., Edkins, G., Pimpale, G., Bartsch, H., & Hobbhahn, M. (2025). *Large Language Models Often Know When They Are Being Evaluated*. arXiv:2505.23836, abstract. https://arxiv.org/abs/2505.23836
 [^schoen]: Schoen, B., Nitishinskaya, E., Balesni, M., Højmark, A., Hofstätter, F., Scheurer, J., et al. (2025). *Stress Testing Deliberative Alignment for Anti-Scheming Training*. arXiv:2509.15541, abstract. https://arxiv.org/abs/2509.15541
+[^metr-frontier]: METR (2026, May 19). *Frontier Risk Report (February to March 2026)*, key facts 3 and 4 and "Risk assessment". https://metr.org/blog/2026-05-19-frontier-risk-report/ Source note: [[METR - Frontier Risk Report February to March 2026]].
