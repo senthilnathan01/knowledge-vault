@@ -14,6 +14,7 @@ The goal is timeless notes: write concept notes that anyone, including the user 
 - Read the whole source, not a summary of it. Get: exact title, author(s) and their role, publication date, publisher, canonical URL, and today's date as `accessed`.
 - If a field is not on the page, write "not stated". If you could not confirm something, write "not verified". Never guess a date, title or author.
 - When a fetch is blocked (for example openai.com returns 403 to WebFetch), open the page in a browser tool and read the page text there. For Google Docs, the published (`/pub`) URL reads cleanly; cite the URL the user gave.
+- If the page is a summary of a longer document (a "Read the report" link, a PDF), say so before writing, give the full document's length, and ask whether to read it. Don't silently stop at the summary. The source note records which one was read.
 - A page that is only a course wrapper or reading list (a BlueDot lesson page, a syllabus) is not a source note. Record its readings and exercise prompts in the course tracker in `projects/`, and ingest the readings themselves.
 
 ## 2. Search the vault before writing
