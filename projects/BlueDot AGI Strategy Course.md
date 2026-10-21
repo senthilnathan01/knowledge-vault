@@ -28,7 +28,8 @@ It also overlaps my [[Game Theory and Strategic Interaction]] project. The racin
 flowchart LR
     S2["Step 2: why alignment fails"] --> S3["Step 3: evidence by tier"]
     S3 --> C1["Course Unit 1:<br/>the race to AGI"]
-    C1 --> C3["Course Unit 3:<br/>pathways to harm"]
+    C1 --> C2["Course Unit 2:<br/>drivers of AI progress"]
+    C2 --> C3["Course Unit 3:<br/>pathways to harm"]
     C3 --> C4["Course Unit 4:<br/>strategy"]
     C4 --> S5["Step 5: governance"]
     C4 -.->|"technical challenge"| S4["Step 4: technical approaches"]
@@ -41,6 +42,8 @@ Durations are the course's estimates.[^course]
 
 Course pages are reading lists, so they get no source note of their own. Each reading gets a source note, and its ideas go into concept notes.
 
+Order I'm taking it in: after lesson 1.1, I paused Unit 1 on 2026-10-21 and jumped to Unit 2, to prepare for that night's live session on Unit 2. I'll come back to lessons 1.2 to 1.4 after Unit 2. Unit 2 builds only on lesson 1.1, so taking it early should lose little (my judgment).
+
 ### Unit 1: The race to AGI
 
 - [x] 1.1 What's at stake? (30 min), ingested 2026-10-20
@@ -52,9 +55,14 @@ Course pages are reading lists, so they get no source note of their own. Each re
 - [ ] 1.3 Competition and coordination problems (45 min)
 - [ ] 1.4 Responding to the Hugging Face incident (45 min, exercise)
 
-### Unit 2: What drives AI progress
+### Unit 2: Drivers of AI progress
 
-- [ ] 2.1 What drives AI progress? (50 min)
+- [x] 2.1 What drives AI progress? (50 min), ingested 2026-10-21
+  - Core reading: Benjamin Todd, "Will we have AGI by 2030?" (80,000 Hours, 2025; the course calls it "The case for AGI by 2030"). Source note: [[Benjamin Todd - Will We Have AGI by 2030]]. The lesson also quotes Todd's September 2026 scoring of his own forecasts, recorded in that note.
+  - Core reading: David Owen, "What will AI look like in 2030?" (Epoch AI, 2025). Source note: [[David Owen - What Will AI Look Like in 2030]].
+  - Ideas pulled out: [[Drivers of AI Progress]], [[AI Timelines]], and why AI research may be automated first in [[Recursive Self-Improvement]].
+  - The lesson's prompt, where to place today's models in Todd's 2025 picture, is in [[Open Questions]].
+  - Optional readings listed, not yet read: Epoch AI, "Can AI scaling continue through 2030?"; Kaplan et al., "Scaling Laws for Neural Language Models" (arXiv:2001.08361); Villalobos et al., "Will we run out of data? Limits of LLM scaling based on human-generated data" (arXiv:2211.04325); Epoch AI, "The case for multi-decade AI timelines"; "The state of AI safety in four fake graphs" (Windows on Theory, 2026); a Dwarkesh Patel podcast with Dario Amodei.[^lesson-2-1]
 - [ ] 2.2 What can increasingly capable AI systems do? (1h 15min)
 - [ ] 2.3 How could progress accelerate from here? (1h 30min)
 
@@ -117,3 +125,4 @@ _Not yet written._
 
 [^course]: BlueDot Impact. *AGI Strategy* (course). Accessed 2026-10-17. https://bluedot.org/courses/agi-strategy
 [^lesson-1-1]: BlueDot Impact. *AGI Strategy, Unit 1: What's at stake?* Accessed 2026-10-20. https://bluedot.org/courses/agi-strategy/1/1
+[^lesson-2-1]: BlueDot Impact. *AGI Strategy, Unit 2: What drives AI progress?* Accessed 2026-10-21. https://bluedot.org/courses/agi-strategy/2/1

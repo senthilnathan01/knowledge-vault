@@ -12,6 +12,8 @@
 - `sources/articles/` — essays, statements and lab posts by others, one source note each
 - `sources/articles/Jakub Pachocki - An Alien Mind.md` — OpenAI's chief scientist (Sept 2026): AI is grown, may soon drive its own development, chain-of-thought monitoring is weakening, scaling should meet mandated safety bars
 - `sources/articles/Daniel Selsam - Personal Statement on AI Risk.md` — OpenAI researcher (Sept 2026): situational awareness is undermining evaluation, a two-premise case for catastrophe, the 2026 agent swarms, cognitive offloading
+- `sources/articles/Benjamin Todd - Will We Have AGI by 2030.md` — 80,000 Hours (2025), with the author's 2026 scorecard: four drivers of progress, time horizons, the case against, bottlenecks around 2030, two scenarios
+- `sources/articles/David Owen - What Will AI Look Like in 2030.md` — Epoch AI (2025): scaling likely continues to 2030, six slowdown arguments answered, AI assistants for science, impact lagging capability
 
 ## Sources / Papers
 - `sources/papers/` — private paper notes and reading evidence
@@ -31,6 +33,8 @@
 - `concepts/AI Safety - Risk by Capability Level.md` — Step 3: risk by capability tier — today's misuse/robustness, frontier misalignment signals (sleeper agents, alignment faking, scheming, evaluation awareness, the 2026 agent incidents), advanced-AI loss of control
 - `concepts/Recursive Self-Improvement.md` — AI doing a growing share of AI research: the feedback loop, how far along it is, why it shrinks time for safety checks, and the steer-or-slow responses
 - `concepts/Chain-of-Thought Monitoring.md` — reading a model's written reasoning to catch bad intent: why it works, why grading the reasoning teaches hiding, its limits, and why it is getting less reliable
+- `concepts/Drivers of AI Progress.md` — compute and algorithms multiply into effective compute; four methods (pretraining, RL for reasoning, test-time compute, agents); verifiability; the limits on each input
+- `concepts/AI Timelines.md` — forecasting specific milestones instead of "AGI", the task time horizon trend, extrapolation as a baseline, why probability concentrates before about 2030, the case against, capability before impact
 
 ## Thinking
 - `thinking/` — my own questions, ideas and discussion conclusions; matters more than any single source note

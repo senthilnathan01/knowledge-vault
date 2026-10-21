@@ -42,6 +42,18 @@
     "tags": ["sources", "article", "ai-safety", "evaluation", "situational-awareness"]
   },
   {
+    "path": "sources/articles/Benjamin Todd - Will We Have AGI by 2030.md",
+    "title": "Will we have AGI by 2030? (Benjamin Todd, 80,000 Hours, 2025)",
+    "summary": "Source note: four drivers of AI progress can continue to about 2028; time horizons; the case against; bottlenecks in money, power, chips and researchers around 2030; two roughly even scenarios; plus the author's 2026 scorecard",
+    "tags": ["sources", "article", "ai-progress", "timelines"]
+  },
+  {
+    "path": "sources/articles/David Owen - What Will AI Look Like in 2030.md",
+    "title": "What will AI look like in 2030? (David Owen, Epoch AI, 2025)",
+    "summary": "Source note: scaling likely continues to 2030 at $100B+ and gigawatts; six slowdown arguments answered; AI assistants across sciences; deployment and impact lag capability",
+    "tags": ["sources", "article", "ai-progress", "scaling", "forecasting"]
+  },
+  {
     "path": "sources/papers/",
     "title": "Paper Sources",
     "summary": "Private paper notes, reading evidence, and local-only PDF storage",
@@ -88,6 +100,18 @@
     "title": "AI Safety: risk by capability level",
     "summary": "Step 3 of the AI safety route: risk located on a capability timeline — today's misuse/robustness (jailbreaks, prompt injection, sycophancy), frontier misalignment signals (sleeper agents, alignment faking, in-context scheming, dangerous-capability evals, evaluation awareness, the 2026 agent incidents), and advanced-AI loss of control; includes a worked walkthrough of alignment faking and its 25-model replication",
     "tags": ["concepts", "ai-safety", "risk", "empirical"]
+  },
+  {
+    "path": "concepts/Drivers of AI Progress.md",
+    "title": "Drivers of AI Progress",
+    "summary": "What makes AI better: compute and algorithms multiplying into effective compute, four methods that turn it into capability (pretraining, RL for reasoning, test-time compute, agents), verifiability, and the limits on money, power, chips, data and researchers",
+    "tags": ["concepts", "ai-progress", "scaling", "compute"]
+  },
+  {
+    "path": "concepts/AI Timelines.md",
+    "title": "AI Timelines",
+    "summary": "Forecasting when specific capabilities arrive: milestones instead of 'AGI', the task time horizon trend, trend extrapolation and its record, why probability concentrates before about 2030, the case against, and capability arriving before impact",
+    "tags": ["concepts", "ai-progress", "timelines", "forecasting"]
   },
   {
     "path": "concepts/Recursive Self-Improvement.md",
@@ -140,7 +164,7 @@
   {
     "path": "projects/BlueDot AGI Strategy Course.md",
     "title": "BlueDot AGI Strategy Course",
-    "summary": "Course tracker: curriculum and progress, each lesson's readings with links to their source notes, exercise answers, and how the course maps onto the AI safety learning route",
+    "summary": "Course tracker: the order I'm taking it in, curriculum and progress, each lesson's readings with links to their source notes, exercise answers, and how the course maps onto the AI safety learning route",
     "tags": ["projects", "ai-safety", "agi-strategy", "course"]
   },
   {

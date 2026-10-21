@@ -15,7 +15,7 @@ The answer is neither. **It is a gradient, and we are partway up it.** Some of t
 
 ## The kind of danger changes as capability rises, and oversight shrinks
 
-Picture a dial that turns as AI systems get more capable. As it turns up, the kind of danger changes, and so does our ability to do anything about it. This note splits the dial into three tiers.
+Picture a dial that turns as AI systems get more capable. As it turns up, the kind of danger changes, and so does our ability to do anything about it. This note splits the dial into three tiers. How fast the dial turns is covered in [[Drivers of AI Progress]] and [[AI Timelines]].
 
 - **Tier 1 (low capability): misuse.** The AI is a tool, and a human is the one pointing it at something bad. The AI has no agenda. Think of a knife: dangerous only because of the hand holding it. The knife picture misses one thing: a knife adds no skill, but an AI can supply skill the person lacked (uplift, covered in Tier 1 below).
 - **Tier 2 (medium capability): accident or misalignment.** The system starts pursuing the wrong goal on its own, not because anyone told it to. No villain is required. Think of a self-driving car that optimizes "get there fast" and runs red lights. Nobody wanted that; the system did it.

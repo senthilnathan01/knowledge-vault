@@ -61,9 +61,34 @@ Questions I want to work out. Each entry says where it came from, why it matters
 ### Which bottleneck in AI research gives way first: experiment design, interpreting results, scaling decisions, or compute?
 
 - Status: open
-- From: [[Recursive Self-Improvement]]. Pachocki expects the loop to continue. Selsam sees real bottlenecks with "no clear trend" yet, but still a real chance of a dramatic jump within a few years.
+- From: [[Recursive Self-Improvement]]. Pachocki expects the loop to continue. Selsam sees real bottlenecks with "no clear trend" yet, but still a real chance of a dramatic jump within a few years. Todd adds the inputs that limit the whole field around 2028 to 2032: money, power, chips and the human research workforce ([[Drivers of AI Progress]]).
 - Why it matters: it sets how soon AI does most of the work of building the next AI.
 - Next step: course lesson 2.3, "How could progress accelerate from here?"
+
+## AI progress and timelines
+
+### Where would I place today's models against Todd's end-of-2026 forecast?
+
+- Status: open
+- From: BlueDot AGI Strategy lesson 2.1, which asks where to place today's models in Todd's world from 2025 ([[Benjamin Todd - Will We Have AGI by 2030]]). His end-of-2026 forecast: expert-level knowledge in every field, better-than-human coding, general reasoning better than almost all humans, and many day-long computer tasks done alone.
+- Why it matters: it tests whether trend extrapolation, the main forecasting method in [[AI Timelines]], is working, and so how much to trust its forecasts for 2028 to 2030.
+- Claude's first take: on Todd's own September 2026 scorecard, today is ahead of his end-of-2026 forecast on tasks with checkable answers. METR's time horizon is 16 hours or more against his predicted 6, revenue growth is 6x a year against his 4x, and FrontierMath is saturated (the top of his range). What his picture doesn't settle is the messy, long, high-context work, and whether AI is doing a meaningful share of AI research yet.
+- Next step: discuss at the Unit 2 live session (2026-10-21).
+
+### Will time horizons keep growing on messy, real-world work, or only on tasks with checkable answers?
+
+- Status: open
+- From: [[Benjamin Todd - Will We Have AGI by 2030]], which calls this "perhaps the central question of AI forecasting right now", and [[AI Timelines]].
+- Why it matters: the case against short timelines rests on AI staying poor at ill-defined, high-context work. If the time horizon trend holds there too, that case loses most of its force. If it only holds on well-defined software tasks, AI may stay a powerful tool rather than a replacement for researchers.
+- Next step: lesson 2.2, "What can increasingly capable AI systems do?"
+
+### Can Todd's fast scenario and Epoch's slower impact estimate both be right?
+
+- Status: open
+- From: [[Benjamin Todd - Will We Have AGI by 2030]] ("100 years of scientific progress in 10") and [[David Owen - What Will AI Look Like in 2030]] (a 10 to 20% productivity gain within scientific tasks, and few drugs helped by 2030).
+- Why it matters (from Claude's reading of the Owen note, not yet discussed): it decides which signals to watch. If impact lags capability, economic numbers are a late warning and capability measures an early one.
+- Claude's first take: they can both be right. Epoch extrapolates benchmarks and how fast fields adopt AI. Todd's fast scenario depends on AI research being automated first, which Epoch's summary doesn't model. The deciding variable is whether AI research is automated before the inputs to progress run out around 2030.
+- Next step: lesson 2.3, "How could progress accelerate from here?"
 
 ## My own direction
 

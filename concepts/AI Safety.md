@@ -35,6 +35,8 @@ Step notes are the study path. Ideas that stand on their own get their own conce
 
 - [[Recursive Self-Improvement]]: AI doing a growing share of the research that builds the next AI, and why that shrinks the time for safety checks.
 - [[Chain-of-Thought Monitoring]]: reading a model's written reasoning to catch bad intent, why grading that reasoning teaches models to hide it, and why it is getting less reliable.
+- [[Drivers of AI Progress]]: what makes AI better: compute and algorithms, turned into capability by four drivers (pretraining, reasoning training, longer thinking, agents), and the limits on each.
+- [[AI Timelines]]: how to forecast when specific capabilities arrive, the time horizon trend, and Todd's argument that the probability is concentrated before about 2030.
 
 ## My questions live in Thinking
 
