@@ -31,6 +31,13 @@ Things to try, build, write or connect. Each entry says where it came from, why 
 - Why it matters: putting numbers on my own expectations, then checking them later, is a direct way to test my views in [[AI Timelines]].
 - First step: forecast three questions and log the numbers and reasons here.
 
+### Play with takeoff assumptions in Epoch's GATE simulator and the uplift app
+
+- From: BlueDot lesson 2.3, which recommends Epoch AI's GATE simulator for building intuitions about compute, algorithms and automation,[^gate] and [[Lifland, Kokotajlo and Halstead - Q2.5 2026 Timelines Update]], which links a small app for its 3-parameter uplift model.
+- The idea: change one assumption at a time (the uplift doubling time, how much compute experiments need) and note how much the arrival date moves.
+- Why it matters: it shows which inputs the forecasts in [[Intelligence Explosion]] are most sensitive to, instead of taking any one date on trust.
+- First step: try three doubling times in the uplift app and record the dates here.
+
 ## Started or done
 
 None yet. When an idea becomes a project or a note, it moves here with a link.
@@ -38,3 +45,4 @@ None yet. When an idea becomes a project or a note, it moves here with a link.
 ## Sources
 
 [^metaculus-ai2027]: Metaculus. *AI 2027* question series (16 questions; started June 10, 2025). Accessed 2026-10-22. https://www.metaculus.com/tournament/ai-2027/
+[^gate]: Epoch AI. *GATE* (interactive model of AI automation and growth). https://epoch.ai/gate Not opened during the ingest.

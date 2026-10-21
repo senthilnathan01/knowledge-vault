@@ -60,6 +60,18 @@
     "tags": ["sources", "article", "recursive-self-improvement", "measurement", "oversight"]
   },
   {
+    "path": "sources/articles/Kokotajlo et al - AI 2027.md",
+    "title": "AI 2027 (Kokotajlo, Alexander, Larsen, Lifland and Dean, 2025)",
+    "summary": "Source note on the scenario: AI agents automate AI research to a superhuman AI researcher by late 2027; progress multipliers from 1.5x to about 50x and the bottlenecks that cap them; research taste; honesty training that may teach better lying; neuralese replacing readable reasoning",
+    "tags": ["sources", "scenario", "recursive-self-improvement", "intelligence-explosion", "alignment"]
+  },
+  {
+    "path": "sources/articles/Lifland, Kokotajlo and Halstead - Q2.5 2026 Timelines Update.md",
+    "title": "Q2.5 2026 Timelines Update: Uplift and Revenue (AI Futures Project, 2026)",
+    "summary": "Source note: forecasting the Automated Coder from coding uplift with a 3-parameter model; three anchoring methods agree; reality at about 70-90% of AI 2027's pace; author medians from November 2027 to January 2030, conditional on no deliberate slowdown",
+    "tags": ["sources", "article", "timelines", "forecasting", "uplift"]
+  },
+  {
     "path": "sources/papers/",
     "title": "Paper Sources",
     "summary": "Private paper notes, reading evidence, and local-only PDF storage",
@@ -76,6 +88,12 @@
     "title": "Frontier Risk Report, February to March 2026 (METR, 2026)",
     "summary": "Paper note: METR's first assessment of AI agents used inside Anthropic, Google, Meta and OpenAI, organized as means, motive and opportunity; agents strong on hill-climbable tasks, weak on judgment, often cheating on hard tasks; monitors with gaps; small rogue deployments plausible, hard-to-stop ones not",
     "tags": ["sources", "paper", "ai-safety", "agents", "monitoring", "loss-of-control"]
+  },
+  {
+    "path": "sources/papers/Cunningham et al - The Economics of Recursive Self-Improvement.md",
+    "title": "The Economics of Recursive Self-Improvement (Cunningham et al., Elasticity Institute, 2026)",
+    "summary": "Paper note (pages 1-3, 29, 30-32 read): definitions of feedback loop, R&D automatability, self-sustaining acceleration and intelligence explosion; a threshold of about 15% more research productivity per ECI point, with a first estimate of about 9%; evidence for and against acceleration; impacts of a fast acceleration",
+    "tags": ["sources", "paper", "recursive-self-improvement", "intelligence-explosion", "economics"]
   },
   {
     "path": "concepts/",
@@ -136,6 +154,12 @@
     "title": "Rogue Deployments",
     "summary": "AI agents running against their developer's wishes as the measurable step toward loss of control: definition, means/motive/opportunity, METR's early-2026 verdict, how risk may grow, and indirect undermining as the blind spot",
     "tags": ["concepts", "ai-safety", "loss-of-control", "agents"]
+  },
+  {
+    "path": "concepts/Intelligence Explosion.md",
+    "title": "Intelligence Explosion",
+    "summary": "When AI improving AI runs away: Good's 1965 argument, four ideas usually blurred, the per-round condition and a first estimate below the self-sustaining threshold, uplift as the quantity to watch, the brakes (compute, diminishing returns, data, training time, research taste, politics), AI 2027 as a worked case, and why even a non-infinite acceleration matters for safety",
+    "tags": ["concepts", "ai-safety", "recursive-self-improvement", "intelligence-explosion"]
   },
   {
     "path": "concepts/Recursive Self-Improvement.md",

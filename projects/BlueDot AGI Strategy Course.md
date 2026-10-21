@@ -70,7 +70,14 @@ Order I'm taking it in: after lesson 1.1, I paused Unit 1 on 2026-10-21 and jump
   - Ideas pulled out: [[Measuring AI Capability]], [[Rogue Deployments]], plus updates to [[Recursive Self-Improvement]], [[Chain-of-Thought Monitoring]], [[Drivers of AI Progress]], [[AI Timelines]] and [[AI Safety - Risk by Capability Level]].
   - Suggested practice: push AI systems to their limits yourself (the course suggests Claude Code or Codex), and try forecasting on Metaculus's AI 2027 question series. Both are in [[Ideas]]. The lesson's ECI comparison prompt is in [[Open Questions]].
   - Optional readings listed, not yet read: "PaperBench: Evaluating AI's Ability to Replicate AI Research" (Starace et al., 2025); "Vending-Bench 2" (Andon Labs, 2025); "OpenAI's GPT-6 Astra on ARC-AGI-3" (ARC Prize, 2026); "What a 100-year-old horse teaches us about AI" (Rational Animations, 2025, on why high benchmark scores can mislead).[^lesson-2-2]
-- [ ] 2.3 How could progress accelerate from here? (1h 30min)
+- [x] 2.3 How could progress accelerate from here? (1h 30min), ingested 2026-10-22
+  - Reading: Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland and Romeo Dean, "AI 2027" (2025). Assigned: from "Mid 2025: Stumbling Agents" through the fourth paragraph of "September 2027", skipping August 2027. Source note: [[Kokotajlo et al - AI 2027]]. The lesson asks readers to look for its assumptions about the inputs, research taste, resources, and the time to turn discoveries into more capable systems.
+  - Reading: Eli Lifland, Daniel Kokotajlo and Brendan Halstead, "Q2.5 2026 Timelines Update: Uplift and Revenue" (2026). Assigned: the summary, the 3-parameter uplift model, and the appendix subsection "Clarification regarding what we're forecasting". Source note: [[Lifland, Kokotajlo and Halstead - Q2.5 2026 Timelines Update]].
+  - Reading: Tom Cunningham et al., "The Economics of Recursive Self-Improvement" (Elasticity Institute, 2026). Assigned: pages 30 to 32, sections 4.2 to 4.4. Source note: [[Cunningham et al - The Economics of Recursive Self-Improvement]].
+  - Ideas pulled out: [[Intelligence Explosion]], plus updates to [[AI Timelines]], [[Recursive Self-Improvement]], [[Chain-of-Thought Monitoring]] and [[Measuring AI Capability]].
+  - Exercise, "How might AI change the work you do?": pick an area of work you know well and list three to five important activities; predict what AI could take responsibility for a year from now, with a confidence level and two pieces of evidence from the unit; then say how much more capable, faster and cheaper AI would change the role. It is in [[Open Questions]].
+  - Suggested practice: explore assumptions in Epoch AI's GATE simulator. It is in [[Ideas]].
+  - Optional readings listed, not yet read: Holden Karnofsky, "AI strategy nearcasting" (2022); Katja Grace et al., "Thousands of AI Authors on the Future of AI" (2024); Erik Brynjolfsson, "The Turing Trap" (2022); Daron Acemoglu, "The Simple Macroeconomics of AI" (2024); Epoch AI's GATE model documentation; JS Denain, Joe Kwon and Anson Ho, "Toward an O*NET for AI R&D" (2026); a Dwarkesh Patel podcast with Carl Shulman on the intelligence explosion; and three further pieces linked on the page: Anthropic's "Scenarios for our Economic Future", "The Goodhart Singularity", and "Musings on Recursive Self-Improvement".[^lesson-2-3]
 
 ### Unit 3: Pathways to harm
 
@@ -127,9 +134,14 @@ Role chosen: _not yet chosen._
 
 _Not yet written._
 
+### 2.3 How might AI change the work you do?
+
+_Not yet written. The full prompt is in [[Open Questions]]._
+
 ## Sources
 
 [^course]: BlueDot Impact. *AGI Strategy* (course). Accessed 2026-10-17. https://bluedot.org/courses/agi-strategy
 [^lesson-1-1]: BlueDot Impact. *AGI Strategy, Unit 1: What's at stake?* Accessed 2026-10-20. https://bluedot.org/courses/agi-strategy/1/1
 [^lesson-2-1]: BlueDot Impact. *AGI Strategy, Unit 2: What drives AI progress?* Accessed 2026-10-21. https://bluedot.org/courses/agi-strategy/2/1
 [^lesson-2-2]: BlueDot Impact. *AGI Strategy, Unit 2: What can increasingly capable AI systems do?* Accessed 2026-10-22. https://bluedot.org/courses/agi-strategy/2/2
+[^lesson-2-3]: BlueDot Impact. *AGI Strategy, Unit 2: How could progress accelerate from here?* Accessed 2026-10-22. https://bluedot.org/courses/agi-strategy/2/3
