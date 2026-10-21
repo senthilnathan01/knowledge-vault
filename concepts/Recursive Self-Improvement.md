@@ -4,7 +4,7 @@ status: active
 visibility: private
 created: 2026-10-20
 tags: [ai-safety, recursive-self-improvement, capabilities, governance]
-sources: ["Jakub Pachocki - An Alien Mind", "Daniel Selsam - Personal Statement on AI Risk"]
+sources: ["Jakub Pachocki - An Alien Mind", "Daniel Selsam - Personal Statement on AI Risk", "Benjamin Todd - Will We Have AGI by 2030"]
 ---
 
 # Recursive Self-Improvement
@@ -53,14 +53,16 @@ An everyday analogy is compound interest: the returns are reinvested, so growth 
 
 ## Labs say the loop has started, but only part of research is automated
 
-How far along this is depends on who you ask, and most of the evidence is lab insiders' judgment rather than published data.
+How far along this is depends on who you ask, and most of the evidence is lab insiders' judgment rather than published data. Todd, an outsider, argues from public trends.
 
 - **OpenAI's chief scientist expects it to continue.** Pachocki writes that, based on internal results, he has "a strong expectation" that the current speed of progress "could be sustained into recursive self-improvement", and that systems will "increasingly drive their own development" (author's view, evidence unpublished).[^pachocki-rsi] He also says OpenAI points its research toward RSI because it sees that as the only way to stay at the frontier, meaning among the labs with the most capable models.[^pachocki-rsi]
 - **A researcher at the same lab sees real bottlenecks.** Selsam says coding is dramatically faster but other bottlenecks remain: designing and interpreting ambiguous experiments, deciding what and when to scale, and waiting for large training runs. He says there is "no clear trend to extrapolate yet" for these (author's view).[^selsam-loop]
 - **He still sees a real chance of fast progress.** Selsam argues AI research is mostly a game of pushing up a few chosen proxy metrics, numbers that stand in for "better model", and that this game has been easier than expected. He sees "a real possibility" of another dramatic jump within a few years (author's view).[^selsam-loop]
 - **The BlueDot course frames it as a near-term deadline.** The AGI Strategy course's first lesson says OpenAI and Anthropic report using AI extensively in their own research, and cites a senior OpenAI researcher as saying human feedback and direction may stay essential for only two or three more model generations.[^bluedot-1-1] The course gives no timescale for a generation, and I have not checked the underlying reports.
+- An outside forecaster argues AI research is especially easy to automate. Benjamin Todd of 80,000 Hours gives four reasons: the work is fully virtual, it is the field AI researchers understand best, they have huge incentives to automate it, and nothing stops them deploying AI on it. So AI may do AI research before it can do most remote jobs (author's view).[^todd-agi2030]
+- He frames it as a race against running out of inputs. Compute, money and the human research workforce can't keep growing at today's rates much past 2030. The question is whether AI starts contributing to research before then. If it does, it can stand in for the researchers and keep progress going; if not, progress probably slows (author's view; the inputs are in [[Drivers of AI Progress]], the timing in [[AI Timelines]]).[^todd-agi2030]
 
-Claude's take (not yet discussed): the direction is agreed, the speed is not. Everyone quoted here expects AI to do more of AI research. They differ on whether the remaining human and compute bottlenecks give way within years or hold for a while.
+Claude's take (not yet discussed): the direction is broadly agreed, the speed is not. Everyone quoted here expects AI to do more of AI research, though Todd says only that it "may" come before other jobs. They differ on whether the remaining human and compute bottlenecks give way within years or hold. Todd adds a deadline: if they haven't given way by about 2030, the inputs stop growing.
 
 ## It matters for safety because most checks run at human speed
 
@@ -99,3 +101,4 @@ The course picks these questions up in two places. Lesson 2.3, "How could progre
 [^good]: Good, I. J. *Speculations Concerning the First Ultraintelligent Machine*. Advances in Computers, 6, 31-88. Crossref lists the volume as 1966; the essay is often cited as 1965. https://doi.org/10.1016/S0065-2458(08)60418-0
 [^omohundro]: Omohundro, S. M. (2008). *The Basic AI Drives*. In *Artificial General Intelligence 2008: Proceedings of the First AGI Conference* (Frontiers in Artificial Intelligence and Applications, Vol. 171, 483-492). IOS Press. https://ebooks.iospress.nl/volumearticle/4114
 [^bostrom-will]: Bostrom, N. (2012). *The Superintelligent Will: Motivation and Instrumental Rationality in Advanced Artificial Agents*. Minds and Machines, 22(2), 71-85. https://nickbostrom.com/superintelligentwill.pdf
+[^todd-agi2030]: Todd, B. (2025, March). *Will we have AGI by 2030?* 80,000 Hours, sections "AI research" and "III. Why the next 5 years are crucial". https://80000hours.org/ai/guide/when-will-agi-arrive/ Source note: [[Benjamin Todd - Will We Have AGI by 2030]].
